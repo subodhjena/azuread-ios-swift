@@ -4,13 +4,16 @@ PODS:
   - ADAL/app-lib (2.4.1):
     - ADAL/tokencacheheader
   - ADAL/tokencacheheader (2.4.1)
+  - Eureka (3.0.0)
 
 DEPENDENCIES:
   - ADAL
+  - Eureka (~> 3.0.0)
 
 SPEC CHECKSUMS:
   ADAL: 37e72fb9046333d4eccf785e5a47203381618539
+  Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
 
-PODFILE CHECKSUM: fc12a862272f78a608b8d64f3b632ba8e0aa6b78
+PODFILE CHECKSUM: 57602d61c554ac50ac38fb2b5b9d6409fa697e29
 
 COCOAPODS: 1.2.0

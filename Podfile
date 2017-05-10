@@ -6,7 +6,9 @@ target 'AzureAD' do
   use_frameworks!
 
   # Pods for AzureAD
+  
   pod 'ADAL'
+  pod 'Eureka', '~> 3.0.0'
 
   target 'AzureADTests' do
     inherit! :search_paths

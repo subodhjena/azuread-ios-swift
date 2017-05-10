@@ -29,4 +29,12 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
 
+    @IBAction func didTapSettings(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "SettingsSegue", sender: self)
+    }
+    
+    @IBAction func didTapAddTask(_ sender: Any) {
+        self.performSegue(withIdentifier: "TaskSegue", sender: self)
+    }
 }

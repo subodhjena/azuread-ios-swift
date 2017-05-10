@@ -22,11 +22,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="lbA-bg-iGl"/>
+                    <navigationItem key="navigationItem" title="Home" id="lbA-bg-iGl">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="IgN-2T-Vbj">
+                            <connections>
+                                <action selector="didTapSettings:" destination="BYZ-38-t0r" id="AjB-Ss-IIr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OwB-LE-bSf">
+                            <connections>
+                                <action selector="didTapAddTask:" destination="BYZ-38-t0r" id="NXm-hf-lRl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="5nn-mG-3Ud" kind="show" identifier="SettingsSegue" id="yXY-SF-kNu"/>
+                        <segue destination="qYM-Xw-TYx" kind="show" identifier="TaskSegue" id="xf6-zY-9Nn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="919" y="-544"/>
+        </scene>
+        <!--Task-->
+        <scene sceneID="dQz-yW-WI9">
+            <objects>
+                <viewController id="qYM-Xw-TYx" customClass="TaskViewController" customModule="AzureAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bka-fE-Ff3"/>
+                        <viewControllerLayoutGuide type="bottom" id="fAJ-on-97j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j3Y-zT-I6L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Task" id="Aar-6N-nLf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKk-A6-UPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175" y="-196"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="FAG-cJ-9iX">
+            <objects>
+                <viewController id="5nn-mG-3Ud" customClass="SettingsViewController" customModule="AzureAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LzY-h9-iYv"/>
+                        <viewControllerLayoutGuide type="bottom" id="iCe-WO-JBC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zyl-Gm-Cu1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="IMI-DX-dw4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRs-5F-ykg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175" y="-893"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gx7-lf-Hx4">

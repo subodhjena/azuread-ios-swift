@@ -10,6 +10,9 @@
 		34C1D855AAC91B034870309C /* Pods_AzureADUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFA0905E6F8DCE6A37B5B2F /* Pods_AzureADUITests.framework */; };
 		8F2733A4B870AD6EFBDECDA1 /* Pods_AzureAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0652F1E923B4BA8098862E66 /* Pods_AzureAD.framework */; };
 		C226E5441EC2EC420008A44C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226E5431EC2EC420008A44C /* HomeViewController.swift */; };
+		C226E5461EC2ED7E0008A44C /* adconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C226E5451EC2ED7E0008A44C /* adconfig.plist */; };
+		C226E54A1EC2EE660008A44C /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226E5491EC2EE660008A44C /* TaskViewController.swift */; };
+		C226E54C1EC2EE720008A44C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226E54B1EC2EE720008A44C /* SettingsViewController.swift */; };
 		C28304D81EC2E2870037E3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304D71EC2E2870037E3D6 /* AppDelegate.swift */; };
 		C28304DD1EC2E2870037E3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28304DB1EC2E2870037E3D6 /* Main.storyboard */; };
 		C28304DF1EC2E2870037E3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28304DE1EC2E2870037E3D6 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		B20B7167F86BBAC7EE3B98DD /* Pods-AzureADUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B699F7F6328CFAEF55A5AAE9 /* Pods-AzureAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD.debug.xcconfig"; sourceTree = "<group>"; };
 		C226E5431EC2EC420008A44C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C226E5451EC2ED7E0008A44C /* adconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adconfig.plist; sourceTree = "<group>"; };
+		C226E5491EC2EE660008A44C /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		C226E54B1EC2EE720008A44C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C28304D41EC2E2870037E3D6 /* AzureAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28304D71EC2E2870037E3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28304DC1EC2E2870037E3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 			children = (
 				C28304E31EC2E2870037E3D6 /* Info.plist */,
 				C28304DE1EC2E2870037E3D6 /* Assets.xcassets */,
+				C226E5451EC2ED7E0008A44C /* adconfig.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -124,6 +131,8 @@
 		C226E53F1EC2EBFC0008A44C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C226E5481EC2EE580008A44C /* Task */,
+				C226E5471EC2EE530008A44C /* Settings */,
 				C226E5411EC2EC1C0008A44C /* Home */,
 			);
 			name = Modules;
@@ -143,6 +152,22 @@
 				C226E5431EC2EC420008A44C /* HomeViewController.swift */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		C226E5471EC2EE530008A44C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C226E54B1EC2EE720008A44C /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		C226E5481EC2EE580008A44C /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				C226E5491EC2EE660008A44C /* TaskViewController.swift */,
+			);
+			name = Task;
 			sourceTree = "<group>";
 		};
 		C28304CB1EC2E2870037E3D6 = {
@@ -316,6 +341,7 @@
 				C28304E21EC2E2870037E3D6 /* LaunchScreen.storyboard in Resources */,
 				C28304DF1EC2E2870037E3D6 /* Assets.xcassets in Resources */,
 				C28304DD1EC2E2870037E3D6 /* Main.storyboard in Resources */,
+				C226E5461EC2ED7E0008A44C /* adconfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +506,8 @@
 			files = (
 				C28304D81EC2E2870037E3D6 /* AppDelegate.swift in Sources */,
 				C226E5441EC2EC420008A44C /* HomeViewController.swift in Sources */,
+				C226E54A1EC2EE660008A44C /* TaskViewController.swift in Sources */,
+				C226E54C1EC2EE720008A44C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

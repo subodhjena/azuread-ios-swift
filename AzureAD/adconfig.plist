@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>authority</key>
+	<string>https://login.microsoftonline.com/common</string>
+	<key>clientId</key>
+	<string>af28b91a-7a51-4c72-b8a4-187dd5b21a75</string>
+	<key>resourceString</key>
+	<string>https://geekythingsforsystemc.com/TodoApi</string>
+	<key>redirectUri</key>
+	<string>mstodo://com.microsoft.windowsazure.activedirectory.samples.microsofttasks</string>
+	<key>userId</key>
+	<string>tomhanks@geekythingsforsystemc.onmicrosoft.com</string>
+	<key>taskWebAPI</key>
+	<string>https://todoserviceforgeekythings.azurewebsites.net/api/todolist</string>
+	<key>fullScreen</key>
+	<true/>
+	<key>showClaims</key>
+	<true/>
+</dict>
+</plist>
