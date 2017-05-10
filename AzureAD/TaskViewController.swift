@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import Eureka
 
-class TaskViewController: UIViewController {
+class TaskViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        createForm()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Form
+    
+    private func createForm() {
+        
+        form +++ Section("Task")
+            <<< TextAreaRow(){ row in
+                row.title = "Task"
+                row.textAreaHeight = TextAreaHeight.dynamic(initialTextViewHeight: 70)
+                row.placeholder = "Task Detail"
+            }
+            +++ Section("Actions")
+            <<< ButtonRow() {
+                $0.title = "Save"
+            }
     }
     
     // MARK: - Navigation
