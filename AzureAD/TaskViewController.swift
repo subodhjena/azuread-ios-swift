@@ -10,6 +10,10 @@ import UIKit
 import Eureka
 
 class TaskViewController: FormViewController {
+    
+    let tagTaskDescription = "taskDescription"
+    
+    var parentVC : HomeViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +35,25 @@ class TaskViewController: FormViewController {
                 row.title = "Task"
                 row.textAreaHeight = TextAreaHeight.dynamic(initialTextViewHeight: 70)
                 row.placeholder = "Task Detail"
+                row.tag = tagTaskDescription
             }
             +++ Section("Actions")
             <<< ButtonRow() {
                 $0.title = "Save"
+                $0.onCellSelection({ cell,row  in
+                    self.saveNote()
+                })
             }
+    }
+    
+    private func saveNote() {
+        
+        let rowTaskDescription: TextAreaRow? = form.rowBy(tag: self.tagTaskDescription)
+        
+        let task = Task(description: rowTaskDescription?.value)
+        parentVC.tasks.append(task)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Navigation

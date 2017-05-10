@@ -36,8 +36,13 @@ class HomeViewController: UIViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "TaskSegue") {
+            
+            let taskVC = segue.destination as! TaskViewController
+            taskVC.parentVC = self
+        }
+        
     }
 
     @IBAction func didTapSettings(_ sender: Any) {
@@ -94,14 +99,18 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = UITableViewCell()
+        let cell = UITableViewCell()
         
         if(indexPath.section == 0){
             
-            cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as! UserTableViewCell
+            let userCell =  tableView.dequeueReusableCell(withIdentifier: "UserCell") as! UserTableViewCell
+            return userCell
         }
         else if(indexPath.section == 1){
-            cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTableViewCell
+            
+            let taskCell =  tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTableViewCell
+            taskCell.setUpCell(task: tasks[indexPath.row])
+            return taskCell
         }
 
         return cell

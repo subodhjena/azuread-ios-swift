@@ -23,4 +23,8 @@ class TaskTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func setUpCell(task: Task) {
+        
+        self.lblTaskDetail.text = task.description
+    }
 }
