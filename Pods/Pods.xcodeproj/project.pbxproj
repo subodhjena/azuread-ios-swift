@@ -1,0 +1,1470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A23E1118673DECADFC7422CD9E7D14F /* ADKeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5425C9D1BDADB9B333121DA6B9DD2A1C /* ADKeychainUtil.m */; };
+		0A5999813C5243CE6A7F011B0EF89599 /* ADAuthenticationRequest+WebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CCAA3ADC45675C59F9BA119EB65138 /* ADAuthenticationRequest+WebRequest.m */; };
+		0B126AFAB51794EA13DF86E58808B63C /* ADClientMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FA5ED35E1FD611EE48E5C8D84A82B6 /* ADClientMetrics.m */; };
+		0D8A42647A6133243F986CA6F1DEE726 /* ADAcquireTokenSilentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0982B22DC8D79E85EE3184ECEBF67F6B /* ADAcquireTokenSilentHandler.m */; };
+		0EAF7CA2DDDEAEF24C63A8A4E76D51BE /* ADAuthenticationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D677743F425D11FA1312E633CB1943FF /* ADAuthenticationSettings.m */; };
+		11001F33429D703E4CF9C01FEC9CAEE0 /* ADAuthenticationResult+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C59765B2D3545960A442BA5F93E286 /* ADAuthenticationResult+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		136761A3C886202E605D342F9F08F750 /* ADUserInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = D20192F42A3533C392F72792D72C6DB2 /* ADUserInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14708352EB678F500800B3EB177AE973 /* ADTelemetryDefaultEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B92B8F9153F313592ECC15E26F6CFAA /* ADTelemetryDefaultEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1648174B4B6AB747586CBD82189D3579 /* NSString+ADHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C0092E2BBD8C603C9A2C8378C4955A /* NSString+ADHelperMethods.m */; };
+		172C8A701C8B6302455F7CA6AA48ADDD /* ADDefaultDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 669B5031E3DC9F034ED2E21780834F5E /* ADDefaultDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		19FE3FA054E98B435C2C1DAC2B5A3D3B /* ADHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD819DBE08BF97E58F59C05AC0EFF3F /* ADHelpers.m */; };
+		1A7FED42A194910E80D794580CB9FE16 /* ADTelemetryUIEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0599716FE2B575A574B6385AD1FC1184 /* ADTelemetryUIEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1ACCAB7A21A7132B1873D59267DD40A0 /* ADAuthenticationRequest+AcquireToken.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAEE2642CA8FB169F63B2DDD352690C /* ADAuthenticationRequest+AcquireToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E0461ACE2E41358C63C031B3A04B132 /* NSDictionary+ADExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327635EA79D8B623E22D53F36932226 /* NSDictionary+ADExtensions.m */; };
+		1E9B96A7522A1BF4C9C05B2A9055A5EF /* ADWebAuthDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBA2E64CA9FB84DAD110055021E9F50 /* ADWebAuthDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1F310B097D470046B058CB728FBAF67A /* ADAuthenticationError.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FCE7978D215A0262DC3ACBE518FF /* ADAuthenticationError.m */; };
+		20A05929064AB328083D22629B30C160 /* NSURL+ADExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 24748E0557DBB9472D88C1C4E107407E /* NSURL+ADExtensions.m */; };
+		21944CA6895A0B9322227909A71DD0A8 /* ADDefaultDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8724876EFEFE02B1EE1A17B98BE72A0C /* ADDefaultDispatcher.m */; };
+		21D261989067E339855C0488EA8CBC60 /* ADAuthenticationRequest+WebRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 402DB988633B8F66DF5FAD3C5B387C4E /* ADAuthenticationRequest+WebRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		21E3D6C5E506AEE1513A4DCACB04BE7C /* ADWebResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = EA60D5A8799764097D2F35EB0D08BCA6 /* ADWebResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		227342467939686199F2388397076308 /* ADNTLMUIPrompt.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3D7D3D661268565B8CAB5119C203C9 /* ADNTLMUIPrompt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24A1877587F8B0B6F22D03148F42B7BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		25819753AA7FABC9E8DB0E92706B3D77 /* ADNTLMHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D225AE6232E7AE40029E3AEB1214869 /* ADNTLMHandler.m */; };
+		25E07762499FAFF7FE3921E1C865A031 /* Pods-AzureAD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D5F84AFF3DFB101DAA00ECEA434EBA /* Pods-AzureAD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B63EC84153EFF04F0B15C95D15F437F /* ADTelemetryHttpEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AEFC9446C18F27EAE7DFB3D70CD01671 /* ADTelemetryHttpEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BBF206046A8AB14547382EDB81C9C9B /* ADAuthorityValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5472B05CD970B98CBBDA0E9713FBB916 /* ADAuthorityValidation.m */; };
+		2F498E2E0E68C5EBBF647409D96242CB /* Pods-AzureAD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C513EB70E1762BFD463A208987EE /* Pods-AzureAD-dummy.m */; };
+		2F6540B8B7FF60CC4A076720686429C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		35145C3965D750B8065B367D60350E57 /* ADKeychainUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D560D7CCCFFB91D449737FACA95156D0 /* ADKeychainUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36FC267EEEC5C9E5428992F0D77F3793 /* ADCustomHeaderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A585CA2AB90A548F370FD097F65FB818 /* ADCustomHeaderHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3779202D00B8A0313A66057B2A9AD7A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		37BC4CAE4155967EF7AF39FBD02CF4C7 /* ADAuthenticationContext+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 979943A99BD381CCCEFF9ADC0967B575 /* ADAuthenticationContext+Internal.m */; };
+		3C00E50338957B4C2F43FABA2F12B8F6 /* Pods-AzureADTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68219DD5B8F62A7258897BEE206763E9 /* Pods-AzureADTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		402C2CA83627FBBF9018F9B6716C1368 /* ADWebAuthResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6782C1AFB7C6A740131731DB904ACE56 /* ADWebAuthResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41D7CC4096E8A67D573A3704054C2748 /* ADAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 331918E783FA6B62612895959324184C /* ADAuthenticationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		431112540442FADA1DC13DF01D4F3D80 /* ADAuthenticationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C9F8E9073A6C75C9D56577302C6BCA /* ADAuthenticationSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F9F7380DEDFC4F36C454D1D88643E3 /* ADAggregatedDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A77804503E6E116937D4EFA657CFD39E /* ADAggregatedDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46BE7AED2A93393A245B108A7DB521F8 /* ADTelemetryEventInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 316801DF874FBFB3B633B0AB8E540F4C /* ADTelemetryEventInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A75E253731F09F93F712B3D767AA807 /* ADBrokerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D562202E1B76D35ABE105E15AEB071D0 /* ADBrokerHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E444D7B9DDD85B8EB9AB58AECF2C244 /* ADWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A9F144A8733EAD21989DF79B5FD352 /* ADWebRequest.m */; };
+		50C2033FA949975760662D4A56AB8EDF /* ADAuthenticationResult+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8E9653D13B307FDD93F87B4E82CF0 /* ADAuthenticationResult+Internal.m */; };
+		5732647E141B3BA25C944728390648D6 /* ADWorkPlaceJoinConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 455A388BB7C428E9946B2AEECF1C2033 /* ADWorkPlaceJoinConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57595E010C24A2F9E84E195DFB65419C /* ADTokenCacheItem+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EB329FAF8FA170497BB69CDF8FF89F /* ADTokenCacheItem+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57CB2D8746C5164647F50C0403E89BAB /* ADBrokerKeyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2122C0377B48723BCE87F551354823C3 /* ADBrokerKeyHelper.m */; };
+		57D4B74B4889A35E3FA4D1C654AA5AA8 /* ADURLSessionDemux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F852FC13BCA874718D490EA76800D19 /* ADURLSessionDemux.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A641643F61B3AE68EBDF75906BE119D /* ADAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6840AD7432E8334B2790E5F037B04631 /* ADAuthenticationRequest.m */; };
+		5A6F0133A63C205F3EA674AAAFD0585E /* ADWebFingerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BCAF560496B41A82DD44C027612A39 /* ADWebFingerRequest.m */; };
+		5BBB0F09F590E30026D4D82FA4AAD028 /* ADAuthenticationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CA85F81CE8E489795786A567D614D158 /* ADAuthenticationViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C2F5C2B84E4B1F1447A9E2F3EF8E6B2 /* ADTelemetryAPIEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E61CF98E1080F2C33DF338D17713BA /* ADTelemetryAPIEvent.m */; };
+		5C96CBFB1DAD508D5BD13D925D851F74 /* Pods-AzureADUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E87D2FA82B96120E649EC3612942C5DF /* Pods-AzureADUITests-dummy.m */; };
+		5F0E6E5CA6564CC2DEBE9E80C64446BC /* ADAuthenticationRequest+Broker.h in Headers */ = {isa = PBXBuildFile; fileRef = D91AC7F68D72E2B1A2B659A5116A4B23 /* ADAuthenticationRequest+Broker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F5191EF47421A6D88108E91FF71DADA /* ADAuthenticationContext+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B087EDA1B3C7A831906BFF801FD5E846 /* ADAuthenticationContext+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5FB90BE6D60B6B739B25501D1E11DE1E /* ADAcquireTokenSilentHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 363F52D6E969E9AA609EB586F0123B6C /* ADAcquireTokenSilentHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63603BE2B6A3F74EF556F41508BB613E /* ADUserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AA60894DC06D4059A6A8CCF30369EC /* ADUserInformation.m */; };
+		64D73C81F1A9E278958376AA88307898 /* ADAuthenticationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 974CACD4BB5587C89DB0F8F0FA8AD91A /* ADAuthenticationResult.m */; };
+		65EFFF4A1BB91E01AF50AC6D246CF9F3 /* ADIpAddressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 44802F7589F0851025F90D0760AEC2A0 /* ADIpAddressHelper.m */; };
+		65F6F9E0BA1DA71FE0F2C932746645F6 /* ADAuthenticationParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C0988BDE95D16A27DD66D88DAC9F74 /* ADAuthenticationParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		684E603C5F85BA5F115567683283A330 /* ADAuthorityValidationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C412A24211397923918BECA352A419D0 /* ADAuthorityValidationRequest.m */; };
+		6BB91EE777E1DBA8023AC23F5FB26B6E /* ADLogger+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D393F454C2B8A4EAECE0A38ADAB3724F /* ADLogger+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D5FFC71A926B5045652CF64BC3BE56A /* ADWebAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E69B64247ED7A18658DBE336A3BD5D /* ADWebAuthController.m */; };
+		703C8C0DE950BC8259BEF1CD1159A9B0 /* ADDrsDiscoveryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0451519017FDD5DF136AFD5BCAE67B /* ADDrsDiscoveryRequest.m */; };
+		70A31D05A27716C7BCA0D2AE5D5FF212 /* ADAuthenticationParameters+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D7175936F6AB0432A590A5CD5A71FED1 /* ADAuthenticationParameters+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70E55EA4252E25A094539798BC515D36 /* ADTelemetryUIEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CF57E664A3540276A4CEE0169A777E5B /* ADTelemetryUIEvent.m */; };
+		712E867D49C1CCA476C44CB5F167DFD6 /* ADBrokerKeyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0F58AAF9EAE33F956B03E4A8E9A311 /* ADBrokerKeyHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		726DE6841C0C9AF4FEF8F873D7EB2428 /* ADNTLMUIPrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BF542F5D22446BB21D9B45165DF30 /* ADNTLMUIPrompt.m */; };
+		728EB8DBEA34CE816462A8A2504B8B2E /* NSURL+ADExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C36D6C24761E819A43F4E198DA607746 /* NSURL+ADExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73B715F4DCAA765E4081737B3553EBC6 /* ADJwtHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A79F2BD7F9B82247EB78EA5C4E4FA23 /* ADJwtHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74860CE1B37BA0B2ABEABF23A2272242 /* ADWebAuthController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C4BDC85E0A5F8AAC534E4DBB372CAA2 /* ADWebAuthController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7508A301BF86E97C73BEE513CCB66331 /* NSMutableDictionary+ADExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 233129293471340B3CC5D8BECA7CFC8A /* NSMutableDictionary+ADExtensions.m */; };
+		75F8DBFF8BE82C003B8B704125518DFB /* ADNTLMHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 03577D1C9253FA6653A7EC53B5F24629 /* ADNTLMHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		769FABDB193D60D55946C263A338B8EA /* ADAuthenticationRequest+AcquireAssertion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8FF3AA09BABF139C9A811272B6C240 /* ADAuthenticationRequest+AcquireAssertion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77829E7A09183733951F5DA04E4CF9FF /* ADUserIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 770025D2EFF364AD1581C5D24E185187 /* ADUserIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E73F5B20183F867566E902940A067E /* ADTelemetry.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B3DFD71A72C6531645B6C22A325C75 /* ADTelemetry.m */; };
+		789F3B8FEC5C69500D626EE8D46BBF03 /* ADAuthenticationError+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 385E6D853CD762DEF0D1FE00BC5669FE /* ADAuthenticationError+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A855D52482DA9B7A80582AEE65516D6 /* NSMutableDictionary+ADExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C972EE5B3F63852CBCD731726AD82C5 /* NSMutableDictionary+ADExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D892FEE12C37DBB92F0AA9BC25E4DB5 /* ADLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A599FD1323B6E70BDE91507E6BA3D /* ADLogger.m */; };
+		7E6258CAD1AA9050181AA1DDEA0E1B69 /* ADWebRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FCF35DCF64DD03CBD06C1B8236D7FF /* ADWebRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FFFB5C72ECC9F8741B18F927302D38D /* ADURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 86015D8FC1862FE25DF357408617441C /* ADURLProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80C121801B6678403571410CAECC6A3E /* ADJwtHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE35BD13CB7214B490E89DD616C1B05A /* ADJwtHelper.m */; };
+		82D788F11F0341CF54FD39A5CD562B6A /* ADRegistrationInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B209EA079048ADAF7EE70288AD6A81C /* ADRegistrationInformation.m */; };
+		836CFBE00FF71C5CA3E0E3B64BC5859E /* NSDictionary+ADExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E98C5D4FAB06166608A8B4C5B12C572 /* NSDictionary+ADExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85429F15EBA1399F0ED604371BB973AB /* ADAuthenticationError.h in Headers */ = {isa = PBXBuildFile; fileRef = 36EF70FFE526A445554071520D4C1B75 /* ADAuthenticationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85686F6A4828E2BACC9997855C31B2E4 /* ADErrorCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 576A9F2280F8CCBF91A7BE7A69D16566 /* ADErrorCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86B4EF9CAB1F95930A737F11BF10C2C3 /* ADTelemetryCacheEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C111096116AB18818B13E0C2BB3D30EB /* ADTelemetryCacheEvent.m */; };
+		874E60DE47D558F25840947052605530 /* ADTelemetry.h in Headers */ = {isa = PBXBuildFile; fileRef = A4981782B827EAE6038AEB7639BE33C2 /* ADTelemetry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D477334297F802771F3573730E85B7 /* ADKeychainTokenCache+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 32E6AB92EDFB91FC001C1F39A93D9F7F /* ADKeychainTokenCache+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88AABACABF8285A50C5FAB2FFE19599B /* ADAppExtensionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F6731B3B908F44D0C3024BDD48255 /* ADAppExtensionUtil.m */; };
+		8B0D4DC50FF03925D7339C4C048AC9B3 /* ADTelemetryCacheEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C0C2F350602139BAB73903C9E4086F22 /* ADTelemetryCacheEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B9D7788D531B5B5A95D2C9D3BC21098 /* ADTokenCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8EF671D4AF2F2DB0C9881E49544C16 /* ADTokenCacheItem.m */; };
+		8CB78DC1EF3C7F15DF62C4D5831AE20A /* ADTokenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 410449BB672C9A8908F6ACCA99098FEB /* ADTokenCache.m */; };
+		8D0612DF44BE57AF1180BADC2D3EA8AC /* UIApplication+ADExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D141E63D760FFCBEFE06630117CEEB34 /* UIApplication+ADExtensions.m */; };
+		8D6C945E7A7B1745B5B802C58BE0F975 /* ADTelemetryDefaultEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD26B32FE763DCB0D745BAD5B5B11 /* ADTelemetryDefaultEvent.m */; };
+		8F1EA1EF282AE4F26C5758B190497D72 /* ADAuthorityValidationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E0974EAD749DD76A172DE09721690170 /* ADAuthorityValidationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F9B5456A23417BD60EB06206A5194D5 /* ADTokenCacheKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C2FD75F99AD349E0676DD2273D4F9E /* ADTokenCacheKey.m */; };
+		915D0C9F9A7B3BACAFB34432B5F4B05D /* ADAuthenticationParameters+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AB0808E6FE00F1E0F1A34FD8D3AFCD /* ADAuthenticationParameters+Internal.m */; };
+		9284D02871431F03DBF3AC8713E285B9 /* ADURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 60545819FA70D09CA3B67BC4BE50F00B /* ADURLProtocol.m */; };
+		9856A268C8B81A98FB3A17A67DE33F12 /* ADKeychainTokenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE50E9AEDD3342314507C10B8DB507DA /* ADKeychainTokenCache.m */; };
+		99C3BFB12A65EAE28A4EAF0C27AFE6BA /* ADTelemetryEventStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B849F11FD24CAB71AD5714141D276C5 /* ADTelemetryEventStrings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99CAAA79774A9DA6D37525CA642F0DCB /* ADAuthenticationRequest+AcquireToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1667B2F41EA12CEFECFA3025B5BB9C65 /* ADAuthenticationRequest+AcquireToken.m */; };
+		9A53F056E01D5F686567BFCD44A84532 /* ADTokenCacheKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED1F6A9444C08F61F902F12DEEF2AD0 /* ADTokenCacheKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D76F04D2997ACECAD0CC8EB8462A3A6 /* ADBrokerNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B9623B10DF902FB2D2901DD0F71BED /* ADBrokerNotificationManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FD0D1DBBA9820998354EECF10B3AFE6 /* ADIpAddressHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 219970528356DBC36BB3BA06FA873F8D /* ADIpAddressHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A039BC092620568CC189DB965F230F42 /* ADBrokerNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88679EC8D80295459584B37DAA136A08 /* ADBrokerNotificationManager.m */; };
+		A2A7B3DD8FD73EF7A97DDCCA5511AEDC /* ADWorkPlaceJoinUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF17990985E26A7B5345D3F7023BA97 /* ADWorkPlaceJoinUtil.m */; };
+		A443AEC3EEC4C48A2D6172D1E81F96A6 /* ADHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF325FDB4A004F2154086C201558BBA /* ADHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A474BF52B7FD5D9AE3D54C25A1F9F3BE /* ADAuthenticationRequest+AcquireAssertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 249BA6AAEC89E5ABE5895FC828D68B4B /* ADAuthenticationRequest+AcquireAssertion.m */; };
+		A86F939690BA0FEE5CBDD9A5BE31D254 /* ADWebAuthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FA5B6F08C0D6A17022EB03D12E3E53 /* ADWebAuthRequest.m */; };
+		A8E331AE2D457C1F1A952C6D4A45EBE1 /* ADTelemetryCollectionRules.m in Sources */ = {isa = PBXBuildFile; fileRef = F973C4E312FACDC9B5FA11F5764D43FB /* ADTelemetryCollectionRules.m */; };
+		A9B70E5D73FBB81C09D64297D8E86D98 /* ADTokenCacheDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 675B592B7D48C21A123B57AA2F540588 /* ADTokenCacheDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AACBE05D0C07D2438F9B41872CFAABDB /* Pods-AzureADUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99828423A543EC4C036417BF9979C762 /* Pods-AzureADUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB0F193DB887C15366ADD4BFA0ADF4BD /* ADTokenCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 617E7ED153AA7A6878FE1B499B81CEE4 /* ADTokenCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AB79A3D1771068B08651AC68A3763C14 /* ADTelemetryAPIEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B92E9E46EC65B231E588BD23F122EF /* ADTelemetryAPIEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC2790A4AD75092924AB78F2D8665B8D /* ADWebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442C77B1C02C8A2666EB6EBBD583918 /* ADWebResponse.m */; };
+		AF5CD243A10365E40A514CD1A3A12C1F /* ADOAuth2Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = AA896CA9221D3F6C69C7A0613DB7137C /* ADOAuth2Constants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B7CF702DC10E6658657D4C2409BA425A /* ADTelemetryBrokerEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 571B56380E50F850F2E61450E54BE4AF /* ADTelemetryBrokerEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8418DA723B7430A720CFA5630D5B2ED /* ADAuthorityValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = AB026023F4107CF24C484DCF24D32FD6 /* ADAuthorityValidation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8BAAE7DC3F86CFD761FB27916C0AE90 /* ADAL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB48B9C4F023EE7B6FB5C1161540A3C /* ADAL.m */; };
+		B8D01863A63D9F4D01063A6AAFE919E2 /* ADTelemetryBrokerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA69E11D15CB3D8DFE82E9B6EE0086 /* ADTelemetryBrokerEvent.m */; };
+		BA97E7BF0111C6D006DACA4228511CF9 /* ADRequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAF2B76C59D4490272C20B5E85DA776 /* ADRequestParameters.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB5787F2837418DA8F88163CB57DE9CD /* Pods-AzureADTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 761E579DAB0722280E21F732F464342F /* Pods-AzureADTests-dummy.m */; };
+		BC18530D713C622483F18F9C6E1FCE52 /* NSString+ADHelperMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0F8839E21F4925E774E5B1B7C2835F /* NSString+ADHelperMethods.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC8C15757B0A973A751A6E5D4E499D80 /* ADTelemetryHttpEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F2401A67EEA342C0CE82BD78FB72738F /* ADTelemetryHttpEvent.m */; };
+		BD2189D62EB42F91F036A44EBC9864BF /* ADWorkPlaceJoinUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C05D5D9AA58B924F49CF0756A14C8AC /* ADWorkPlaceJoinUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF790E9C82C6169DBE1956DE79C85352 /* ADAppExtensionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E52C23CD9CFB8020A10700DAF7867B /* ADAppExtensionUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF902A1F478D12DD72F36642C56C8363 /* ADAuthenticationRequest+Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = 482F1627F494F3B0B1D006937CAEB01F /* ADAuthenticationRequest+Broker.m */; };
+		BFF9A578AEEA85653C22DCCA7CF7ADC4 /* ADWebAuthRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6879207316EA2EC7327FD4427BBF3898 /* ADWebAuthRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0B1301787A7183207D022380BEE5541 /* NSUUID+ADExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B690367208CEFFC077BD892DA377F41C /* NSUUID+ADExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1A5DBA14E5125257B547FC65A79641E /* ADAuthenticationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 868D63119E41606B6209D00E1241909B /* ADAuthenticationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C29814A726D73DAB5905F175F5399F8A /* ADWebAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C329449E3BF3E01E76B57A5E6E71E1 /* ADWebAuthResponse.m */; };
+		C4369FC65B65672F6B5A60D746D9320E /* ADTelemetryEventStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C15374840F4EDB01F356E4F9294E96 /* ADTelemetryEventStrings.m */; };
+		C9992B646AF102362E2F427705D08266 /* ADAL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0282BEB3DCEEB5617D7C69E3C673FF1 /* ADAL-dummy.m */; };
+		CACBCF4B985AC461E520D29BBDC91405 /* ADAL.h in Headers */ = {isa = PBXBuildFile; fileRef = F25A2AD561ED7A515788DFF6BCE14762 /* ADAL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBE4532D261865B37F89E68ED07A59F4 /* ADCustomHeaderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF15E6A7DD3F86F62A87AE11831C153 /* ADCustomHeaderHandler.m */; };
+		D05DA4BEAA212F1879FA7E02F9EFD04A /* NSUUID+ADExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EE346B931D060CAF3E5755909AFE77 /* NSUUID+ADExtensions.m */; };
+		D133AF1E0D38BEE3142B2425E5B524AE /* ADAggregatedDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED81C9D2FD1B81B2CF2A647BE55C5D5 /* ADAggregatedDispatcher.m */; };
+		D20B6D2557A5C75F2024DBC00BF753C5 /* ADWebAuthController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C82402860244C863B9D6DB28A2D5481 /* ADWebAuthController+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3F9E2DD7C5251C2EDC9FDC302BE1587 /* ADTokenCacheAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = AD082486B8F452AD15881510E1F8C2E6 /* ADTokenCacheAccessor.m */; };
+		D4405FA8C2B38CBED273F09FAC3417ED /* ADAuthenticationParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5827608A22F0E2B01A2E06235DAF32C5 /* ADAuthenticationParameters.m */; };
+		DCA4F36FFB13415736FB00A98A6100D6 /* ADTelemetry+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED011E5F2EC6712C37CBFFF2AB64DB2 /* ADTelemetry+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DFAD9B993A3AEE8BB7152A4449B8E6D8 /* ADTelemetryCollectionRules.h in Headers */ = {isa = PBXBuildFile; fileRef = 6216C5FFB7120ADE0F3C06DF075993D4 /* ADTelemetryCollectionRules.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E00C6F9013BF0FF8B7184599C5F9BF46 /* ADURLSessionDemux.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C603835655397F6AAB38EFA1548CCDA /* ADURLSessionDemux.m */; };
+		E1603C9054907DBD7D68854B2AE61297 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E2BC3E00448D4BAEC053309DE7305850 /* ADALFrameworkUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED81B8E679712A6DB7D2991E59D3B49 /* ADALFrameworkUtils.m */; };
+		E2CCAAAE6682D481C928B2576AE07258 /* ADLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A1558B9CC901D1C08A69969723A90346 /* ADLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3AEF78FEFD555BA47374DAF55734B96 /* ADDrsDiscoveryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 854FB7D76330381CDB46544618D14D61 /* ADDrsDiscoveryRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4484177DE541AD0EA6C3F6ACC6E8497 /* ADRegistrationInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = FABE044ACD7169414CE75D3D019C1A57 /* ADRegistrationInformation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC1332313C0213BE0341816AD8AD16B2 /* ADPkeyAuthHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B9029B59AC863DBD7F65EEEAA53CF7 /* ADPkeyAuthHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC7CB7ECC5A6DA2A37BD946883F0BE49 /* ADPkeyAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 571B137C9035103088CB45B073BC5F84 /* ADPkeyAuthHelper.m */; };
+		EE8D2BA796FDC6731405B535EEDF1227 /* ADClientMetrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 694CDAB61C310BD1802EDCC6CD0F48E6 /* ADClientMetrics.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1403C4A991541CA5DAB443F5205AFA6 /* ADRequestContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC4218CF869DC7D35366A161518EAF4 /* ADRequestContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1FEEF5B594A22637284771ACCCE535F /* ADTokenCacheItem+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8530B9AB3F0124D978869223E6782D1E /* ADTokenCacheItem+Internal.m */; };
+		F254F3A80668A67635AFAFF77FF7EB9A /* ADTokenCacheAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C110BBB26AE52478752C87458762E37 /* ADTokenCacheAccessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3097418376847FDA7432D895871E8AB /* ADAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E54FCF5275EEAA4107E8931EE845E /* ADAuthenticationViewController.m */; };
+		F34F3B477C2E9ADA6E1B4DDC496DC574 /* ADALFrameworkUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8910976698AEB6FC140647F5B454A58D /* ADALFrameworkUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4ACCAEF317CE85CA5B358D8900B620A /* ADUserIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4431ABE5D130036B0AAD179350CE92 /* ADUserIdentifier.m */; };
+		F54D512E6FAA0709650352CEA797A787 /* ADTokenCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D730CB20CCA11892051C952875714DC0 /* ADTokenCacheItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F88A7BE14A8EFB85D472473BADE70B8A /* ADAuthenticationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 41925C1DF1B823990AC3D145E56F3017 /* ADAuthenticationContext.m */; };
+		F89A973CD6E084638ED6D5E6E292FFD3 /* ADTokenCache+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C414733BCAEF2C4B460675BC6337509 /* ADTokenCache+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F96CF3ADE72FE5DE1426FFEB6A9B7869 /* ADWebFingerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FBE73F61C21A00BE1B4CB358F4631C /* ADWebFingerRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FAB7BA367957A2A0B2A5B819BFF5DE2E /* ADAuthenticationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BE50FA02D23887FA36A78BE53189D7 /* ADAuthenticationResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBA88723EB2E9333D0B02E84B1BBB5A4 /* UIApplication+ADExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4B798C9EA86D49BA441E7009AF7351 /* UIApplication+ADExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD7FAE9B660B48538AF22D89DD54D383 /* ADOAuth2Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E687597F5901E39B93462D6FC969532 /* ADOAuth2Constants.m */; };
+		FD828C967963814D1047684F5459F964 /* ADRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4111B9B7FFF81A37CB0DA96B2ECD5 /* ADRequestParameters.m */; };
+		FE0FAD60CEB6B0A370A70D636194DEC7 /* ADKeychainTokenCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC5BDBDA8B5DC6D4DCA6323B8948AD0 /* ADKeychainTokenCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1067407E7C10277D1311D90245EC9E /* ADAL_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A7845FC093419A7412C37D3EFA18A735 /* ADAL_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE3BAE559E4E6A954A3A81F2B6DEE511 /* ADBrokerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C88A94D84170045908EABD9C36AC6B /* ADBrokerHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C63EAFDA615AB799C31A52ECE9A87EAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFAECA976AD335F5A942AA0C717EDB43;
+			remoteInfo = ADAL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C59765B2D3545960A442BA5F93E286 /* ADAuthenticationResult+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationResult+Internal.h"; path = "ADAL/src/ADAuthenticationResult+Internal.h"; sourceTree = "<group>"; };
+		03577D1C9253FA6653A7EC53B5F24629 /* ADNTLMHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADNTLMHandler.h; path = ADAL/src/urlprotocol/ADNTLMHandler.h; sourceTree = "<group>"; };
+		036F6731B3B908F44D0C3024BDD48255 /* ADAppExtensionUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAppExtensionUtil.m; path = ADAL/src/utils/ios/ADAppExtensionUtil.m; sourceTree = "<group>"; };
+		0599716FE2B575A574B6385AD1FC1184 /* ADTelemetryUIEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryUIEvent.h; path = ADAL/src/telemetry/ADTelemetryUIEvent.h; sourceTree = "<group>"; };
+		094D08891CD198006D6BF45F8A9FCB61 /* Pods-AzureADTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureADTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0982B22DC8D79E85EE3184ECEBF67F6B /* ADAcquireTokenSilentHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAcquireTokenSilentHandler.m; path = ADAL/src/request/ADAcquireTokenSilentHandler.m; sourceTree = "<group>"; };
+		09C2FD75F99AD349E0676DD2273D4F9E /* ADTokenCacheKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTokenCacheKey.m; path = ADAL/src/cache/ADTokenCacheKey.m; sourceTree = "<group>"; };
+		0B209EA079048ADAF7EE70288AD6A81C /* ADRegistrationInformation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADRegistrationInformation.m; path = ADAL/src/workplacejoin/ios/ADRegistrationInformation.m; sourceTree = "<group>"; };
+		0E2BF542F5D22446BB21D9B45165DF30 /* ADNTLMUIPrompt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADNTLMUIPrompt.m; path = ADAL/src/ui/ios/ADNTLMUIPrompt.m; sourceTree = "<group>"; };
+		11E52C23CD9CFB8020A10700DAF7867B /* ADAppExtensionUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAppExtensionUtil.h; path = ADAL/src/utils/ios/ADAppExtensionUtil.h; sourceTree = "<group>"; };
+		131B826E2ED424216D820A3B1D878AC6 /* Pods-AzureADUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AzureADUITests.modulemap"; sourceTree = "<group>"; };
+		13A9F144A8733EAD21989DF79B5FD352 /* ADWebRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADWebRequest.m; path = ADAL/src/request/ADWebRequest.m; sourceTree = "<group>"; };
+		14E8E9653D13B307FDD93F87B4E82CF0 /* ADAuthenticationResult+Internal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADAuthenticationResult+Internal.m"; path = "ADAL/src/ADAuthenticationResult+Internal.m"; sourceTree = "<group>"; };
+		15B9623B10DF902FB2D2901DD0F71BED /* ADBrokerNotificationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADBrokerNotificationManager.h; path = ADAL/src/broker/ios/ADBrokerNotificationManager.h; sourceTree = "<group>"; };
+		1667B2F41EA12CEFECFA3025B5BB9C65 /* ADAuthenticationRequest+AcquireToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADAuthenticationRequest+AcquireToken.m"; path = "ADAL/src/request/ADAuthenticationRequest+AcquireToken.m"; sourceTree = "<group>"; };
+		17F5C513EB70E1762BFD463A208987EE /* Pods-AzureAD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureAD-dummy.m"; sourceTree = "<group>"; };
+		1AF17990985E26A7B5345D3F7023BA97 /* ADWorkPlaceJoinUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADWorkPlaceJoinUtil.m; path = ADAL/src/workplacejoin/ios/ADWorkPlaceJoinUtil.m; sourceTree = "<group>"; };
+		2122C0377B48723BCE87F551354823C3 /* ADBrokerKeyHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADBrokerKeyHelper.m; path = ADAL/src/broker/ios/ADBrokerKeyHelper.m; sourceTree = "<group>"; };
+		219970528356DBC36BB3BA06FA873F8D /* ADIpAddressHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADIpAddressHelper.h; path = ADAL/src/utils/ADIpAddressHelper.h; sourceTree = "<group>"; };
+		21B2B1619266C334468508542D9DFFE4 /* Pods-AzureADUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureADUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21C329449E3BF3E01E76B57A5E6E71E1 /* ADWebAuthResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADWebAuthResponse.m; path = ADAL/src/request/ADWebAuthResponse.m; sourceTree = "<group>"; };
+		233129293471340B3CC5D8BECA7CFC8A /* NSMutableDictionary+ADExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+ADExtensions.m"; path = "ADAL/src/utils/NSMutableDictionary+ADExtensions.m"; sourceTree = "<group>"; };
+		24748E0557DBB9472D88C1C4E107407E /* NSURL+ADExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+ADExtensions.m"; path = "ADAL/src/utils/NSURL+ADExtensions.m"; sourceTree = "<group>"; };
+		249BA6AAEC89E5ABE5895FC828D68B4B /* ADAuthenticationRequest+AcquireAssertion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADAuthenticationRequest+AcquireAssertion.m"; path = "ADAL/src/request/ADAuthenticationRequest+AcquireAssertion.m"; sourceTree = "<group>"; };
+		2543A8ACFCC598534A38F0A7B0CBC28A /* Pods-AzureAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureAD.debug.xcconfig"; sourceTree = "<group>"; };
+		27B9029B59AC863DBD7F65EEEAA53CF7 /* ADPkeyAuthHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADPkeyAuthHelper.h; path = ADAL/src/workplacejoin/ADPkeyAuthHelper.h; sourceTree = "<group>"; };
+		2BB4111B9B7FFF81A37CB0DA96B2ECD5 /* ADRequestParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADRequestParameters.m; path = ADAL/src/ADRequestParameters.m; sourceTree = "<group>"; };
+		2C8FF3AA09BABF139C9A811272B6C240 /* ADAuthenticationRequest+AcquireAssertion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationRequest+AcquireAssertion.h"; path = "ADAL/src/request/ADAuthenticationRequest+AcquireAssertion.h"; sourceTree = "<group>"; };
+		2EF15E6A7DD3F86F62A87AE11831C153 /* ADCustomHeaderHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADCustomHeaderHandler.m; path = ADAL/src/urlprotocol/ADCustomHeaderHandler.m; sourceTree = "<group>"; };
+		30E9FCE7978D215A0262DC3ACBE518FF /* ADAuthenticationError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthenticationError.m; path = ADAL/src/ADAuthenticationError.m; sourceTree = "<group>"; };
+		316801DF874FBFB3B633B0AB8E540F4C /* ADTelemetryEventInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryEventInterface.h; path = ADAL/src/telemetry/ADTelemetryEventInterface.h; sourceTree = "<group>"; };
+		32AA393BE287B11DA17EAEE85BB604D1 /* Pods-AzureADTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureADTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32E6AB92EDFB91FC001C1F39A93D9F7F /* ADKeychainTokenCache+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADKeychainTokenCache+Internal.h"; path = "ADAL/src/cache/ios/ADKeychainTokenCache+Internal.h"; sourceTree = "<group>"; };
+		331918E783FA6B62612895959324184C /* ADAuthenticationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthenticationRequest.h; path = ADAL/src/request/ADAuthenticationRequest.h; sourceTree = "<group>"; };
+		3442C77B1C02C8A2666EB6EBBD583918 /* ADWebResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADWebResponse.m; path = ADAL/src/request/ADWebResponse.m; sourceTree = "<group>"; };
+		363F52D6E969E9AA609EB586F0123B6C /* ADAcquireTokenSilentHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAcquireTokenSilentHandler.h; path = ADAL/src/request/ADAcquireTokenSilentHandler.h; sourceTree = "<group>"; };
+		367226682B14C4256CE7989987798EB1 /* Pods-AzureAD-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureAD-frameworks.sh"; sourceTree = "<group>"; };
+		36EF70FFE526A445554071520D4C1B75 /* ADAuthenticationError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthenticationError.h; path = ADAL/src/public/ADAuthenticationError.h; sourceTree = "<group>"; };
+		37C9F8E9073A6C75C9D56577302C6BCA /* ADAuthenticationSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthenticationSettings.h; path = ADAL/src/public/ADAuthenticationSettings.h; sourceTree = "<group>"; };
+		385E6D853CD762DEF0D1FE00BC5669FE /* ADAuthenticationError+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationError+Internal.h"; path = "ADAL/src/ADAuthenticationError+Internal.h"; sourceTree = "<group>"; };
+		3A4D6B5DEDCB6782C0BAE82C2BEE63D2 /* Pods-AzureADUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureADUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C110BBB26AE52478752C87458762E37 /* ADTokenCacheAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTokenCacheAccessor.h; path = ADAL/src/cache/ADTokenCacheAccessor.h; sourceTree = "<group>"; };
+		3C972EE5B3F63852CBCD731726AD82C5 /* NSMutableDictionary+ADExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+ADExtensions.h"; path = "ADAL/src/utils/NSMutableDictionary+ADExtensions.h"; sourceTree = "<group>"; };
+		3D225AE6232E7AE40029E3AEB1214869 /* ADNTLMHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADNTLMHandler.m; path = ADAL/src/urlprotocol/ADNTLMHandler.m; sourceTree = "<group>"; };
+		3ED1F6A9444C08F61F902F12DEEF2AD0 /* ADTokenCacheKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTokenCacheKey.h; path = ADAL/src/cache/ADTokenCacheKey.h; sourceTree = "<group>"; };
+		402DB988633B8F66DF5FAD3C5B387C4E /* ADAuthenticationRequest+WebRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationRequest+WebRequest.h"; path = "ADAL/src/request/ADAuthenticationRequest+WebRequest.h"; sourceTree = "<group>"; };
+		40EF9728DDC26591240DD9E182D172DB /* Pods-AzureADUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureADUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		410449BB672C9A8908F6ACCA99098FEB /* ADTokenCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTokenCache.m; path = ADAL/src/cache/ADTokenCache.m; sourceTree = "<group>"; };
+		41925C1DF1B823990AC3D145E56F3017 /* ADAuthenticationContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthenticationContext.m; path = ADAL/src/ADAuthenticationContext.m; sourceTree = "<group>"; };
+		422E54FCF5275EEAA4107E8931EE845E /* ADAuthenticationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthenticationViewController.m; path = ADAL/src/ui/ios/ADAuthenticationViewController.m; sourceTree = "<group>"; };
+		43AA60894DC06D4059A6A8CCF30369EC /* ADUserInformation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADUserInformation.m; path = ADAL/src/ADUserInformation.m; sourceTree = "<group>"; };
+		44802F7589F0851025F90D0760AEC2A0 /* ADIpAddressHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADIpAddressHelper.m; path = ADAL/src/utils/ADIpAddressHelper.m; sourceTree = "<group>"; };
+		455A388BB7C428E9946B2AEECF1C2033 /* ADWorkPlaceJoinConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWorkPlaceJoinConstants.h; path = ADAL/src/workplacejoin/ADWorkPlaceJoinConstants.h; sourceTree = "<group>"; };
+		46C0092E2BBD8C603C9A2C8378C4955A /* NSString+ADHelperMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ADHelperMethods.m"; path = "ADAL/src/utils/NSString+ADHelperMethods.m"; sourceTree = "<group>"; };
+		482F1627F494F3B0B1D006937CAEB01F /* ADAuthenticationRequest+Broker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADAuthenticationRequest+Broker.m"; path = "ADAL/src/request/ADAuthenticationRequest+Broker.m"; sourceTree = "<group>"; };
+		49358F1F6B46A7283654BDCC467C6244 /* Pods-AzureADUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureADUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4B849F11FD24CAB71AD5714141D276C5 /* ADTelemetryEventStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryEventStrings.h; path = ADAL/src/telemetry/ADTelemetryEventStrings.h; sourceTree = "<group>"; };
+		4ED011E5F2EC6712C37CBFFF2AB64DB2 /* ADTelemetry+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADTelemetry+Internal.h"; path = "ADAL/src/telemetry/ADTelemetry+Internal.h"; sourceTree = "<group>"; };
+		5425C9D1BDADB9B333121DA6B9DD2A1C /* ADKeychainUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADKeychainUtil.m; path = ADAL/src/utils/ios/ADKeychainUtil.m; sourceTree = "<group>"; };
+		5472B05CD970B98CBBDA0E9713FBB916 /* ADAuthorityValidation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthorityValidation.m; path = ADAL/src/ADAuthorityValidation.m; sourceTree = "<group>"; };
+		54FD31900E3061460F8FAE99DFCDB659 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550A599FD1323B6E70BDE91507E6BA3D /* ADLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADLogger.m; path = ADAL/src/ADLogger.m; sourceTree = "<group>"; };
+		565C447329B57FE886F1F548BEB0C0C5 /* Pods_AzureAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AzureAD.framework; path = "Pods-AzureAD.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571B137C9035103088CB45B073BC5F84 /* ADPkeyAuthHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADPkeyAuthHelper.m; path = ADAL/src/workplacejoin/ADPkeyAuthHelper.m; sourceTree = "<group>"; };
+		571B56380E50F850F2E61450E54BE4AF /* ADTelemetryBrokerEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryBrokerEvent.h; path = ADAL/src/telemetry/ADTelemetryBrokerEvent.h; sourceTree = "<group>"; };
+		576A9F2280F8CCBF91A7BE7A69D16566 /* ADErrorCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADErrorCodes.h; path = ADAL/src/public/ADErrorCodes.h; sourceTree = "<group>"; };
+		581FB7AFFD435302D4B80C305D46AA71 /* ADAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ADAL.framework; path = ADAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5827608A22F0E2B01A2E06235DAF32C5 /* ADAuthenticationParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthenticationParameters.m; path = ADAL/src/ADAuthenticationParameters.m; sourceTree = "<group>"; };
+		5C05D5D9AA58B924F49CF0756A14C8AC /* ADWorkPlaceJoinUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWorkPlaceJoinUtil.h; path = ADAL/src/workplacejoin/ADWorkPlaceJoinUtil.h; sourceTree = "<group>"; };
+		5C603835655397F6AAB38EFA1548CCDA /* ADURLSessionDemux.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADURLSessionDemux.m; path = ADAL/src/urlprotocol/ADURLSessionDemux.m; sourceTree = "<group>"; };
+		5ED81B8E679712A6DB7D2991E59D3B49 /* ADALFrameworkUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADALFrameworkUtils.m; path = ADAL/src/utils/ADALFrameworkUtils.m; sourceTree = "<group>"; };
+		60545819FA70D09CA3B67BC4BE50F00B /* ADURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADURLProtocol.m; path = ADAL/src/urlprotocol/ADURLProtocol.m; sourceTree = "<group>"; };
+		617E7ED153AA7A6878FE1B499B81CEE4 /* ADTokenCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTokenCache.h; path = ADAL/src/public/mac/ADTokenCache.h; sourceTree = "<group>"; };
+		6216C5FFB7120ADE0F3C06DF075993D4 /* ADTelemetryCollectionRules.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryCollectionRules.h; path = ADAL/src/telemetry/ADTelemetryCollectionRules.h; sourceTree = "<group>"; };
+		669B5031E3DC9F034ED2E21780834F5E /* ADDefaultDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADDefaultDispatcher.h; path = ADAL/src/telemetry/ADDefaultDispatcher.h; sourceTree = "<group>"; };
+		675B592B7D48C21A123B57AA2F540588 /* ADTokenCacheDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTokenCacheDataSource.h; path = ADAL/src/cache/ADTokenCacheDataSource.h; sourceTree = "<group>"; };
+		6782C1AFB7C6A740131731DB904ACE56 /* ADWebAuthResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWebAuthResponse.h; path = ADAL/src/request/ADWebAuthResponse.h; sourceTree = "<group>"; };
+		68219DD5B8F62A7258897BEE206763E9 /* Pods-AzureADTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AzureADTests-umbrella.h"; sourceTree = "<group>"; };
+		6840AD7432E8334B2790E5F037B04631 /* ADAuthenticationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthenticationRequest.m; path = ADAL/src/request/ADAuthenticationRequest.m; sourceTree = "<group>"; };
+		6879207316EA2EC7327FD4427BBF3898 /* ADWebAuthRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWebAuthRequest.h; path = ADAL/src/request/ADWebAuthRequest.h; sourceTree = "<group>"; };
+		68BE50FA02D23887FA36A78BE53189D7 /* ADAuthenticationResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthenticationResult.h; path = ADAL/src/public/ADAuthenticationResult.h; sourceTree = "<group>"; };
+		694CDAB61C310BD1802EDCC6CD0F48E6 /* ADClientMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADClientMetrics.h; path = ADAL/src/ADClientMetrics.h; sourceTree = "<group>"; };
+		6BC4218CF869DC7D35366A161518EAF4 /* ADRequestContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADRequestContext.h; path = ADAL/src/ADRequestContext.h; sourceTree = "<group>"; };
+		6C414733BCAEF2C4B460675BC6337509 /* ADTokenCache+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADTokenCache+Internal.h"; path = "ADAL/src/cache/ADTokenCache+Internal.h"; sourceTree = "<group>"; };
+		6C4BDC85E0A5F8AAC534E4DBB372CAA2 /* ADWebAuthController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWebAuthController.h; path = ADAL/src/public/ADWebAuthController.h; sourceTree = "<group>"; };
+		6C82402860244C863B9D6DB28A2D5481 /* ADWebAuthController+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADWebAuthController+Internal.h"; path = "ADAL/src/ui/ADWebAuthController+Internal.h"; sourceTree = "<group>"; };
+		6D384057B8F666106100459796A2625A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7355386889CF0483A3AA07B3719CFA /* Pods_AzureADUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AzureADUITests.framework; path = "Pods-AzureADUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72E69B64247ED7A18658DBE336A3BD5D /* ADWebAuthController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADWebAuthController.m; path = ADAL/src/ui/ADWebAuthController.m; sourceTree = "<group>"; };
+		761E579DAB0722280E21F732F464342F /* Pods-AzureADTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureADTests-dummy.m"; sourceTree = "<group>"; };
+		770025D2EFF364AD1581C5D24E185187 /* ADUserIdentifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADUserIdentifier.h; path = ADAL/src/public/ADUserIdentifier.h; sourceTree = "<group>"; };
+		785DCDD8C4D2BBEB572311C976D32B0D /* Pods-AzureADTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureADTests-resources.sh"; sourceTree = "<group>"; };
+		79DA69E11D15CB3D8DFE82E9B6EE0086 /* ADTelemetryBrokerEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryBrokerEvent.m; path = ADAL/src/telemetry/ADTelemetryBrokerEvent.m; sourceTree = "<group>"; };
+		7A4B798C9EA86D49BA441E7009AF7351 /* UIApplication+ADExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+ADExtensions.h"; path = "ADAL/src/ui/ios/UIApplication+ADExtensions.h"; sourceTree = "<group>"; };
+		7B92B8F9153F313592ECC15E26F6CFAA /* ADTelemetryDefaultEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryDefaultEvent.h; path = ADAL/src/telemetry/ADTelemetryDefaultEvent.h; sourceTree = "<group>"; };
+		7E687597F5901E39B93462D6FC969532 /* ADOAuth2Constants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADOAuth2Constants.m; path = ADAL/src/ADOAuth2Constants.m; sourceTree = "<group>"; };
+		7E98C5D4FAB06166608A8B4C5B12C572 /* NSDictionary+ADExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ADExtensions.h"; path = "ADAL/src/utils/NSDictionary+ADExtensions.h"; sourceTree = "<group>"; };
+		7ED81C9D2FD1B81B2CF2A647BE55C5D5 /* ADAggregatedDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAggregatedDispatcher.m; path = ADAL/src/telemetry/ADAggregatedDispatcher.m; sourceTree = "<group>"; };
+		7F852FC13BCA874718D490EA76800D19 /* ADURLSessionDemux.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADURLSessionDemux.h; path = ADAL/src/urlprotocol/ADURLSessionDemux.h; sourceTree = "<group>"; };
+		7FBA2E64CA9FB84DAD110055021E9F50 /* ADWebAuthDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWebAuthDelegate.h; path = ADAL/src/ui/ADWebAuthDelegate.h; sourceTree = "<group>"; };
+		80FCF35DCF64DD03CBD06C1B8236D7FF /* ADWebRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWebRequest.h; path = ADAL/src/request/ADWebRequest.h; sourceTree = "<group>"; };
+		813BD26B32FE763DCB0D745BAD5B5B11 /* ADTelemetryDefaultEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryDefaultEvent.m; path = ADAL/src/telemetry/ADTelemetryDefaultEvent.m; sourceTree = "<group>"; };
+		81E61CF98E1080F2C33DF338D17713BA /* ADTelemetryAPIEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryAPIEvent.m; path = ADAL/src/telemetry/ADTelemetryAPIEvent.m; sourceTree = "<group>"; };
+		8327635EA79D8B623E22D53F36932226 /* NSDictionary+ADExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ADExtensions.m"; path = "ADAL/src/utils/NSDictionary+ADExtensions.m"; sourceTree = "<group>"; };
+		8530B9AB3F0124D978869223E6782D1E /* ADTokenCacheItem+Internal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADTokenCacheItem+Internal.m"; path = "ADAL/src/cache/ADTokenCacheItem+Internal.m"; sourceTree = "<group>"; };
+		854FB7D76330381CDB46544618D14D61 /* ADDrsDiscoveryRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADDrsDiscoveryRequest.h; path = ADAL/src/request/ADDrsDiscoveryRequest.h; sourceTree = "<group>"; };
+		86015D8FC1862FE25DF357408617441C /* ADURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADURLProtocol.h; path = ADAL/src/urlprotocol/ADURLProtocol.h; sourceTree = "<group>"; };
+		868D63119E41606B6209D00E1241909B /* ADAuthenticationContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthenticationContext.h; path = ADAL/src/public/ADAuthenticationContext.h; sourceTree = "<group>"; };
+		8724876EFEFE02B1EE1A17B98BE72A0C /* ADDefaultDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADDefaultDispatcher.m; path = ADAL/src/telemetry/ADDefaultDispatcher.m; sourceTree = "<group>"; };
+		88679EC8D80295459584B37DAA136A08 /* ADBrokerNotificationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADBrokerNotificationManager.m; path = ADAL/src/broker/ios/ADBrokerNotificationManager.m; sourceTree = "<group>"; };
+		8910976698AEB6FC140647F5B454A58D /* ADALFrameworkUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADALFrameworkUtils.h; path = ADAL/src/utils/ADALFrameworkUtils.h; sourceTree = "<group>"; };
+		8A79F2BD7F9B82247EB78EA5C4E4FA23 /* ADJwtHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJwtHelper.h; path = ADAL/src/workplacejoin/ADJwtHelper.h; sourceTree = "<group>"; };
+		8AF325FDB4A004F2154086C201558BBA /* ADHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADHelpers.h; path = ADAL/src/utils/ADHelpers.h; sourceTree = "<group>"; };
+		8DC41F6DC8D185BF9E31957E7C04FE2C /* Pods-AzureAD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AzureAD.modulemap"; sourceTree = "<group>"; };
+		8F5E50C92016B15D6630ACB3594C9749 /* Pods_AzureADTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AzureADTests.framework; path = "Pods-AzureADTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C88A94D84170045908EABD9C36AC6B /* ADBrokerHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADBrokerHelper.m; path = ADAL/src/broker/ios/ADBrokerHelper.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95C0988BDE95D16A27DD66D88DAC9F74 /* ADAuthenticationParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthenticationParameters.h; path = ADAL/src/public/ADAuthenticationParameters.h; sourceTree = "<group>"; };
+		974CACD4BB5587C89DB0F8F0FA8AD91A /* ADAuthenticationResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthenticationResult.m; path = ADAL/src/ADAuthenticationResult.m; sourceTree = "<group>"; };
+		979943A99BD381CCCEFF9ADC0967B575 /* ADAuthenticationContext+Internal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADAuthenticationContext+Internal.m"; path = "ADAL/src/ADAuthenticationContext+Internal.m"; sourceTree = "<group>"; };
+		99828423A543EC4C036417BF9979C762 /* Pods-AzureADUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AzureADUITests-umbrella.h"; sourceTree = "<group>"; };
+		9EB48B9C4F023EE7B6FB5C1161540A3C /* ADAL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAL.m; path = ADAL/src/ADAL.m; sourceTree = "<group>"; };
+		A1558B9CC901D1C08A69969723A90346 /* ADLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADLogger.h; path = ADAL/src/public/ADLogger.h; sourceTree = "<group>"; };
+		A2B3DFD71A72C6531645B6C22A325C75 /* ADTelemetry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetry.m; path = ADAL/src/telemetry/ADTelemetry.m; sourceTree = "<group>"; };
+		A4981782B827EAE6038AEB7639BE33C2 /* ADTelemetry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetry.h; path = ADAL/src/public/ADTelemetry.h; sourceTree = "<group>"; };
+		A585CA2AB90A548F370FD097F65FB818 /* ADCustomHeaderHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADCustomHeaderHandler.h; path = ADAL/src/urlprotocol/ADCustomHeaderHandler.h; sourceTree = "<group>"; };
+		A6FFA2D9756E0CE31350FB23035A9AEC /* Pods-AzureADTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AzureADTests.modulemap"; sourceTree = "<group>"; };
+		A77804503E6E116937D4EFA657CFD39E /* ADAggregatedDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAggregatedDispatcher.h; path = ADAL/src/telemetry/ADAggregatedDispatcher.h; sourceTree = "<group>"; };
+		A7845FC093419A7412C37D3EFA18A735 /* ADAL_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAL_Internal.h; path = ADAL/src/ADAL_Internal.h; sourceTree = "<group>"; };
+		A9FBE73F61C21A00BE1B4CB358F4631C /* ADWebFingerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWebFingerRequest.h; path = ADAL/src/request/ADWebFingerRequest.h; sourceTree = "<group>"; };
+		AA361F224F0CC55DAF9658A9C7B81347 /* Pods-AzureADTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureADTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA896CA9221D3F6C69C7A0613DB7137C /* ADOAuth2Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADOAuth2Constants.h; path = ADAL/src/ADOAuth2Constants.h; sourceTree = "<group>"; };
+		AB026023F4107CF24C484DCF24D32FD6 /* ADAuthorityValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthorityValidation.h; path = ADAL/src/ADAuthorityValidation.h; sourceTree = "<group>"; };
+		ABF1FF66FE7913513DDACF7C067846ED /* ADAL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ADAL.modulemap; sourceTree = "<group>"; };
+		AD082486B8F452AD15881510E1F8C2E6 /* ADTokenCacheAccessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTokenCacheAccessor.m; path = ADAL/src/cache/ADTokenCacheAccessor.m; sourceTree = "<group>"; };
+		AD3D7D3D661268565B8CAB5119C203C9 /* ADNTLMUIPrompt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADNTLMUIPrompt.h; path = ADAL/src/ui/ADNTLMUIPrompt.h; sourceTree = "<group>"; };
+		AE35BD13CB7214B490E89DD616C1B05A /* ADJwtHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJwtHelper.m; path = ADAL/src/workplacejoin/ADJwtHelper.m; sourceTree = "<group>"; };
+		AEC5BDBDA8B5DC6D4DCA6323B8948AD0 /* ADKeychainTokenCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADKeychainTokenCache.h; path = ADAL/src/public/ios/ADKeychainTokenCache.h; sourceTree = "<group>"; };
+		AEFC9446C18F27EAE7DFB3D70CD01671 /* ADTelemetryHttpEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryHttpEvent.h; path = ADAL/src/telemetry/ADTelemetryHttpEvent.h; sourceTree = "<group>"; };
+		B087EDA1B3C7A831906BFF801FD5E846 /* ADAuthenticationContext+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationContext+Internal.h"; path = "ADAL/src/ADAuthenticationContext+Internal.h"; sourceTree = "<group>"; };
+		B3CCAA3ADC45675C59F9BA119EB65138 /* ADAuthenticationRequest+WebRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADAuthenticationRequest+WebRequest.m"; path = "ADAL/src/request/ADAuthenticationRequest+WebRequest.m"; sourceTree = "<group>"; };
+		B690367208CEFFC077BD892DA377F41C /* NSUUID+ADExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUUID+ADExtensions.h"; path = "ADAL/src/utils/NSUUID+ADExtensions.h"; sourceTree = "<group>"; };
+		B70F6A914BEC5D131CD65D31F27AB2C8 /* Pods-AzureADTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureADTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA04C2543DD8C77C4EA1017429F38394 /* ADAL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADAL-prefix.pch"; sourceTree = "<group>"; };
+		BC4435C8CABFC11BD7CDB47F76905798 /* Pods-AzureAD-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureAD-resources.sh"; sourceTree = "<group>"; };
+		BFD819DBE08BF97E58F59C05AC0EFF3F /* ADHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADHelpers.m; path = ADAL/src/utils/ADHelpers.m; sourceTree = "<group>"; };
+		C0C2F350602139BAB73903C9E4086F22 /* ADTelemetryCacheEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryCacheEvent.h; path = ADAL/src/telemetry/ADTelemetryCacheEvent.h; sourceTree = "<group>"; };
+		C111096116AB18818B13E0C2BB3D30EB /* ADTelemetryCacheEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryCacheEvent.m; path = ADAL/src/telemetry/ADTelemetryCacheEvent.m; sourceTree = "<group>"; };
+		C36D6C24761E819A43F4E198DA607746 /* NSURL+ADExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+ADExtensions.h"; path = "ADAL/src/utils/NSURL+ADExtensions.h"; sourceTree = "<group>"; };
+		C412A24211397923918BECA352A419D0 /* ADAuthorityValidationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthorityValidationRequest.m; path = ADAL/src/request/ADAuthorityValidationRequest.m; sourceTree = "<group>"; };
+		C4AB0808E6FE00F1E0F1A34FD8D3AFCD /* ADAuthenticationParameters+Internal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ADAuthenticationParameters+Internal.m"; path = "ADAL/src/ADAuthenticationParameters+Internal.m"; sourceTree = "<group>"; };
+		CA85F81CE8E489795786A567D614D158 /* ADAuthenticationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthenticationViewController.h; path = ADAL/src/ui/ADAuthenticationViewController.h; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF57E664A3540276A4CEE0169A777E5B /* ADTelemetryUIEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryUIEvent.m; path = ADAL/src/telemetry/ADTelemetryUIEvent.m; sourceTree = "<group>"; };
+		D0282BEB3DCEEB5617D7C69E3C673FF1 /* ADAL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ADAL-dummy.m"; sourceTree = "<group>"; };
+		D141E63D760FFCBEFE06630117CEEB34 /* UIApplication+ADExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+ADExtensions.m"; path = "ADAL/src/ui/ios/UIApplication+ADExtensions.m"; sourceTree = "<group>"; };
+		D20192F42A3533C392F72792D72C6DB2 /* ADUserInformation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADUserInformation.h; path = ADAL/src/public/ADUserInformation.h; sourceTree = "<group>"; };
+		D393F454C2B8A4EAECE0A38ADAB3724F /* ADLogger+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADLogger+Internal.h"; path = "ADAL/src/ADLogger+Internal.h"; sourceTree = "<group>"; };
+		D4EE346B931D060CAF3E5755909AFE77 /* NSUUID+ADExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUUID+ADExtensions.m"; path = "ADAL/src/utils/NSUUID+ADExtensions.m"; sourceTree = "<group>"; };
+		D560D7CCCFFB91D449737FACA95156D0 /* ADKeychainUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADKeychainUtil.h; path = ADAL/src/utils/ADKeychainUtil.h; sourceTree = "<group>"; };
+		D562202E1B76D35ABE105E15AEB071D0 /* ADBrokerHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADBrokerHelper.h; path = ADAL/src/broker/ADBrokerHelper.h; sourceTree = "<group>"; };
+		D677743F425D11FA1312E633CB1943FF /* ADAuthenticationSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADAuthenticationSettings.m; path = ADAL/src/ADAuthenticationSettings.m; sourceTree = "<group>"; };
+		D6C15374840F4EDB01F356E4F9294E96 /* ADTelemetryEventStrings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryEventStrings.m; path = ADAL/src/telemetry/ADTelemetryEventStrings.m; sourceTree = "<group>"; };
+		D6D5F84AFF3DFB101DAA00ECEA434EBA /* Pods-AzureAD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AzureAD-umbrella.h"; sourceTree = "<group>"; };
+		D7175936F6AB0432A590A5CD5A71FED1 /* ADAuthenticationParameters+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationParameters+Internal.h"; path = "ADAL/src/ADAuthenticationParameters+Internal.h"; sourceTree = "<group>"; };
+		D730CB20CCA11892051C952875714DC0 /* ADTokenCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTokenCacheItem.h; path = ADAL/src/public/ADTokenCacheItem.h; sourceTree = "<group>"; };
+		D77D88E721EF6D7615C79D9D98F72F31 /* Pods-AzureADUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureADUITests-resources.sh"; sourceTree = "<group>"; };
+		D79B98315DE056623860A52C403CD2BD /* Pods-AzureAD-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureAD-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D91AC7F68D72E2B1A2B659A5116A4B23 /* ADAuthenticationRequest+Broker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationRequest+Broker.h"; path = "ADAL/src/request/ADAuthenticationRequest+Broker.h"; sourceTree = "<group>"; };
+		D9BF66322AB7FEF6C9E574518DC5680B /* Pods-AzureADTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureADTests-frameworks.sh"; sourceTree = "<group>"; };
+		DA0F8839E21F4925E774E5B1B7C2835F /* NSString+ADHelperMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ADHelperMethods.h"; path = "ADAL/src/utils/NSString+ADHelperMethods.h"; sourceTree = "<group>"; };
+		DBAF2B76C59D4490272C20B5E85DA776 /* ADRequestParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADRequestParameters.h; path = ADAL/src/ADRequestParameters.h; sourceTree = "<group>"; };
+		DE0451519017FDD5DF136AFD5BCAE67B /* ADDrsDiscoveryRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADDrsDiscoveryRequest.m; path = ADAL/src/request/ADDrsDiscoveryRequest.m; sourceTree = "<group>"; };
+		E0974EAD749DD76A172DE09721690170 /* ADAuthorityValidationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAuthorityValidationRequest.h; path = ADAL/src/request/ADAuthorityValidationRequest.h; sourceTree = "<group>"; };
+		E1B92E9E46EC65B231E588BD23F122EF /* ADTelemetryAPIEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADTelemetryAPIEvent.h; path = ADAL/src/telemetry/ADTelemetryAPIEvent.h; sourceTree = "<group>"; };
+		E279B57584024D2EC5A988641FD3FF80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5BCAF560496B41A82DD44C027612A39 /* ADWebFingerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADWebFingerRequest.m; path = ADAL/src/request/ADWebFingerRequest.m; sourceTree = "<group>"; };
+		E87D2FA82B96120E649EC3612942C5DF /* Pods-AzureADUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureADUITests-dummy.m"; sourceTree = "<group>"; };
+		EA60D5A8799764097D2F35EB0D08BCA6 /* ADWebResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADWebResponse.h; path = ADAL/src/request/ADWebResponse.h; sourceTree = "<group>"; };
+		EB7B221829B7ADD85E06EE8AE36663B5 /* Pods-AzureAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureAD.release.xcconfig"; sourceTree = "<group>"; };
+		ED0F58AAF9EAE33F956B03E4A8E9A311 /* ADBrokerKeyHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADBrokerKeyHelper.h; path = ADAL/src/broker/ios/ADBrokerKeyHelper.h; sourceTree = "<group>"; };
+		EDAEE2642CA8FB169F63B2DDD352690C /* ADAuthenticationRequest+AcquireToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADAuthenticationRequest+AcquireToken.h"; path = "ADAL/src/request/ADAuthenticationRequest+AcquireToken.h"; sourceTree = "<group>"; };
+		EF4431ABE5D130036B0AAD179350CE92 /* ADUserIdentifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADUserIdentifier.m; path = ADAL/src/ADUserIdentifier.m; sourceTree = "<group>"; };
+		EF8EF671D4AF2F2DB0C9881E49544C16 /* ADTokenCacheItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTokenCacheItem.m; path = ADAL/src/cache/ADTokenCacheItem.m; sourceTree = "<group>"; };
+		F2401A67EEA342C0CE82BD78FB72738F /* ADTelemetryHttpEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryHttpEvent.m; path = ADAL/src/telemetry/ADTelemetryHttpEvent.m; sourceTree = "<group>"; };
+		F25A2AD561ED7A515788DFF6BCE14762 /* ADAL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADAL.h; path = ADAL/src/public/ADAL.h; sourceTree = "<group>"; };
+		F5BAEA1226248DC5415B6841C7766479 /* ADAL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ADAL.xcconfig; sourceTree = "<group>"; };
+		F5EB329FAF8FA170497BB69CDF8FF89F /* ADTokenCacheItem+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ADTokenCacheItem+Internal.h"; path = "ADAL/src/cache/ADTokenCacheItem+Internal.h"; sourceTree = "<group>"; };
+		F5FA5B6F08C0D6A17022EB03D12E3E53 /* ADWebAuthRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADWebAuthRequest.m; path = ADAL/src/request/ADWebAuthRequest.m; sourceTree = "<group>"; };
+		F6FA5ED35E1FD611EE48E5C8D84A82B6 /* ADClientMetrics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADClientMetrics.m; path = ADAL/src/ADClientMetrics.m; sourceTree = "<group>"; };
+		F7BF67EBF6EF90232F6189FE3FEF0A5A /* Pods-AzureAD-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureAD-acknowledgements.plist"; sourceTree = "<group>"; };
+		F973C4E312FACDC9B5FA11F5764D43FB /* ADTelemetryCollectionRules.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADTelemetryCollectionRules.m; path = ADAL/src/telemetry/ADTelemetryCollectionRules.m; sourceTree = "<group>"; };
+		FABE044ACD7169414CE75D3D019C1A57 /* ADRegistrationInformation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADRegistrationInformation.h; path = ADAL/src/workplacejoin/ADRegistrationInformation.h; sourceTree = "<group>"; };
+		FC87BF1707F9341F010E4A36763A66AF /* Pods-AzureADUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureADUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD5EAC47EFB5352AFC611783A2178F6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE50E9AEDD3342314507C10B8DB507DA /* ADKeychainTokenCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADKeychainTokenCache.m; path = ADAL/src/cache/ios/ADKeychainTokenCache.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB7B07BA2B26D7FDD302A81FA12C16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3779202D00B8A0313A66057B2A9AD7A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC3FB8C16FC511691CADC5BDAD126A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1603C9054907DBD7D68854B2AE61297 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B807D6B51F5EE741302E2DBA2DC88ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A1877587F8B0B6F22D03148F42B7BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E554E60E815CE1DBADE7384689EDE2A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6540B8B7FF60CC4A076720686429C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DF58FA1F5D81F371358319DBFD09082 /* app-lib */ = {
+			isa = PBXGroup;
+			children = (
+				363F52D6E969E9AA609EB586F0123B6C /* ADAcquireTokenSilentHandler.h */,
+				0982B22DC8D79E85EE3184ECEBF67F6B /* ADAcquireTokenSilentHandler.m */,
+				A77804503E6E116937D4EFA657CFD39E /* ADAggregatedDispatcher.h */,
+				7ED81C9D2FD1B81B2CF2A647BE55C5D5 /* ADAggregatedDispatcher.m */,
+				F25A2AD561ED7A515788DFF6BCE14762 /* ADAL.h */,
+				9EB48B9C4F023EE7B6FB5C1161540A3C /* ADAL.m */,
+				A7845FC093419A7412C37D3EFA18A735 /* ADAL_Internal.h */,
+				8910976698AEB6FC140647F5B454A58D /* ADALFrameworkUtils.h */,
+				5ED81B8E679712A6DB7D2991E59D3B49 /* ADALFrameworkUtils.m */,
+				11E52C23CD9CFB8020A10700DAF7867B /* ADAppExtensionUtil.h */,
+				036F6731B3B908F44D0C3024BDD48255 /* ADAppExtensionUtil.m */,
+				868D63119E41606B6209D00E1241909B /* ADAuthenticationContext.h */,
+				41925C1DF1B823990AC3D145E56F3017 /* ADAuthenticationContext.m */,
+				B087EDA1B3C7A831906BFF801FD5E846 /* ADAuthenticationContext+Internal.h */,
+				979943A99BD381CCCEFF9ADC0967B575 /* ADAuthenticationContext+Internal.m */,
+				36EF70FFE526A445554071520D4C1B75 /* ADAuthenticationError.h */,
+				30E9FCE7978D215A0262DC3ACBE518FF /* ADAuthenticationError.m */,
+				385E6D853CD762DEF0D1FE00BC5669FE /* ADAuthenticationError+Internal.h */,
+				95C0988BDE95D16A27DD66D88DAC9F74 /* ADAuthenticationParameters.h */,
+				5827608A22F0E2B01A2E06235DAF32C5 /* ADAuthenticationParameters.m */,
+				D7175936F6AB0432A590A5CD5A71FED1 /* ADAuthenticationParameters+Internal.h */,
+				C4AB0808E6FE00F1E0F1A34FD8D3AFCD /* ADAuthenticationParameters+Internal.m */,
+				331918E783FA6B62612895959324184C /* ADAuthenticationRequest.h */,
+				6840AD7432E8334B2790E5F037B04631 /* ADAuthenticationRequest.m */,
+				2C8FF3AA09BABF139C9A811272B6C240 /* ADAuthenticationRequest+AcquireAssertion.h */,
+				249BA6AAEC89E5ABE5895FC828D68B4B /* ADAuthenticationRequest+AcquireAssertion.m */,
+				EDAEE2642CA8FB169F63B2DDD352690C /* ADAuthenticationRequest+AcquireToken.h */,
+				1667B2F41EA12CEFECFA3025B5BB9C65 /* ADAuthenticationRequest+AcquireToken.m */,
+				D91AC7F68D72E2B1A2B659A5116A4B23 /* ADAuthenticationRequest+Broker.h */,
+				482F1627F494F3B0B1D006937CAEB01F /* ADAuthenticationRequest+Broker.m */,
+				402DB988633B8F66DF5FAD3C5B387C4E /* ADAuthenticationRequest+WebRequest.h */,
+				B3CCAA3ADC45675C59F9BA119EB65138 /* ADAuthenticationRequest+WebRequest.m */,
+				68BE50FA02D23887FA36A78BE53189D7 /* ADAuthenticationResult.h */,
+				974CACD4BB5587C89DB0F8F0FA8AD91A /* ADAuthenticationResult.m */,
+				02C59765B2D3545960A442BA5F93E286 /* ADAuthenticationResult+Internal.h */,
+				14E8E9653D13B307FDD93F87B4E82CF0 /* ADAuthenticationResult+Internal.m */,
+				37C9F8E9073A6C75C9D56577302C6BCA /* ADAuthenticationSettings.h */,
+				D677743F425D11FA1312E633CB1943FF /* ADAuthenticationSettings.m */,
+				CA85F81CE8E489795786A567D614D158 /* ADAuthenticationViewController.h */,
+				422E54FCF5275EEAA4107E8931EE845E /* ADAuthenticationViewController.m */,
+				AB026023F4107CF24C484DCF24D32FD6 /* ADAuthorityValidation.h */,
+				5472B05CD970B98CBBDA0E9713FBB916 /* ADAuthorityValidation.m */,
+				E0974EAD749DD76A172DE09721690170 /* ADAuthorityValidationRequest.h */,
+				C412A24211397923918BECA352A419D0 /* ADAuthorityValidationRequest.m */,
+				D562202E1B76D35ABE105E15AEB071D0 /* ADBrokerHelper.h */,
+				90C88A94D84170045908EABD9C36AC6B /* ADBrokerHelper.m */,
+				ED0F58AAF9EAE33F956B03E4A8E9A311 /* ADBrokerKeyHelper.h */,
+				2122C0377B48723BCE87F551354823C3 /* ADBrokerKeyHelper.m */,
+				15B9623B10DF902FB2D2901DD0F71BED /* ADBrokerNotificationManager.h */,
+				88679EC8D80295459584B37DAA136A08 /* ADBrokerNotificationManager.m */,
+				694CDAB61C310BD1802EDCC6CD0F48E6 /* ADClientMetrics.h */,
+				F6FA5ED35E1FD611EE48E5C8D84A82B6 /* ADClientMetrics.m */,
+				A585CA2AB90A548F370FD097F65FB818 /* ADCustomHeaderHandler.h */,
+				2EF15E6A7DD3F86F62A87AE11831C153 /* ADCustomHeaderHandler.m */,
+				669B5031E3DC9F034ED2E21780834F5E /* ADDefaultDispatcher.h */,
+				8724876EFEFE02B1EE1A17B98BE72A0C /* ADDefaultDispatcher.m */,
+				854FB7D76330381CDB46544618D14D61 /* ADDrsDiscoveryRequest.h */,
+				DE0451519017FDD5DF136AFD5BCAE67B /* ADDrsDiscoveryRequest.m */,
+				576A9F2280F8CCBF91A7BE7A69D16566 /* ADErrorCodes.h */,
+				8AF325FDB4A004F2154086C201558BBA /* ADHelpers.h */,
+				BFD819DBE08BF97E58F59C05AC0EFF3F /* ADHelpers.m */,
+				219970528356DBC36BB3BA06FA873F8D /* ADIpAddressHelper.h */,
+				44802F7589F0851025F90D0760AEC2A0 /* ADIpAddressHelper.m */,
+				8A79F2BD7F9B82247EB78EA5C4E4FA23 /* ADJwtHelper.h */,
+				AE35BD13CB7214B490E89DD616C1B05A /* ADJwtHelper.m */,
+				AEC5BDBDA8B5DC6D4DCA6323B8948AD0 /* ADKeychainTokenCache.h */,
+				FE50E9AEDD3342314507C10B8DB507DA /* ADKeychainTokenCache.m */,
+				32E6AB92EDFB91FC001C1F39A93D9F7F /* ADKeychainTokenCache+Internal.h */,
+				D560D7CCCFFB91D449737FACA95156D0 /* ADKeychainUtil.h */,
+				5425C9D1BDADB9B333121DA6B9DD2A1C /* ADKeychainUtil.m */,
+				A1558B9CC901D1C08A69969723A90346 /* ADLogger.h */,
+				550A599FD1323B6E70BDE91507E6BA3D /* ADLogger.m */,
+				D393F454C2B8A4EAECE0A38ADAB3724F /* ADLogger+Internal.h */,
+				03577D1C9253FA6653A7EC53B5F24629 /* ADNTLMHandler.h */,
+				3D225AE6232E7AE40029E3AEB1214869 /* ADNTLMHandler.m */,
+				AD3D7D3D661268565B8CAB5119C203C9 /* ADNTLMUIPrompt.h */,
+				0E2BF542F5D22446BB21D9B45165DF30 /* ADNTLMUIPrompt.m */,
+				AA896CA9221D3F6C69C7A0613DB7137C /* ADOAuth2Constants.h */,
+				7E687597F5901E39B93462D6FC969532 /* ADOAuth2Constants.m */,
+				27B9029B59AC863DBD7F65EEEAA53CF7 /* ADPkeyAuthHelper.h */,
+				571B137C9035103088CB45B073BC5F84 /* ADPkeyAuthHelper.m */,
+				FABE044ACD7169414CE75D3D019C1A57 /* ADRegistrationInformation.h */,
+				0B209EA079048ADAF7EE70288AD6A81C /* ADRegistrationInformation.m */,
+				6BC4218CF869DC7D35366A161518EAF4 /* ADRequestContext.h */,
+				DBAF2B76C59D4490272C20B5E85DA776 /* ADRequestParameters.h */,
+				2BB4111B9B7FFF81A37CB0DA96B2ECD5 /* ADRequestParameters.m */,
+				A4981782B827EAE6038AEB7639BE33C2 /* ADTelemetry.h */,
+				A2B3DFD71A72C6531645B6C22A325C75 /* ADTelemetry.m */,
+				4ED011E5F2EC6712C37CBFFF2AB64DB2 /* ADTelemetry+Internal.h */,
+				E1B92E9E46EC65B231E588BD23F122EF /* ADTelemetryAPIEvent.h */,
+				81E61CF98E1080F2C33DF338D17713BA /* ADTelemetryAPIEvent.m */,
+				571B56380E50F850F2E61450E54BE4AF /* ADTelemetryBrokerEvent.h */,
+				79DA69E11D15CB3D8DFE82E9B6EE0086 /* ADTelemetryBrokerEvent.m */,
+				C0C2F350602139BAB73903C9E4086F22 /* ADTelemetryCacheEvent.h */,
+				C111096116AB18818B13E0C2BB3D30EB /* ADTelemetryCacheEvent.m */,
+				6216C5FFB7120ADE0F3C06DF075993D4 /* ADTelemetryCollectionRules.h */,
+				F973C4E312FACDC9B5FA11F5764D43FB /* ADTelemetryCollectionRules.m */,
+				7B92B8F9153F313592ECC15E26F6CFAA /* ADTelemetryDefaultEvent.h */,
+				813BD26B32FE763DCB0D745BAD5B5B11 /* ADTelemetryDefaultEvent.m */,
+				316801DF874FBFB3B633B0AB8E540F4C /* ADTelemetryEventInterface.h */,
+				4B849F11FD24CAB71AD5714141D276C5 /* ADTelemetryEventStrings.h */,
+				D6C15374840F4EDB01F356E4F9294E96 /* ADTelemetryEventStrings.m */,
+				AEFC9446C18F27EAE7DFB3D70CD01671 /* ADTelemetryHttpEvent.h */,
+				F2401A67EEA342C0CE82BD78FB72738F /* ADTelemetryHttpEvent.m */,
+				0599716FE2B575A574B6385AD1FC1184 /* ADTelemetryUIEvent.h */,
+				CF57E664A3540276A4CEE0169A777E5B /* ADTelemetryUIEvent.m */,
+				410449BB672C9A8908F6ACCA99098FEB /* ADTokenCache.m */,
+				6C414733BCAEF2C4B460675BC6337509 /* ADTokenCache+Internal.h */,
+				3C110BBB26AE52478752C87458762E37 /* ADTokenCacheAccessor.h */,
+				AD082486B8F452AD15881510E1F8C2E6 /* ADTokenCacheAccessor.m */,
+				675B592B7D48C21A123B57AA2F540588 /* ADTokenCacheDataSource.h */,
+				D730CB20CCA11892051C952875714DC0 /* ADTokenCacheItem.h */,
+				EF8EF671D4AF2F2DB0C9881E49544C16 /* ADTokenCacheItem.m */,
+				F5EB329FAF8FA170497BB69CDF8FF89F /* ADTokenCacheItem+Internal.h */,
+				8530B9AB3F0124D978869223E6782D1E /* ADTokenCacheItem+Internal.m */,
+				3ED1F6A9444C08F61F902F12DEEF2AD0 /* ADTokenCacheKey.h */,
+				09C2FD75F99AD349E0676DD2273D4F9E /* ADTokenCacheKey.m */,
+				86015D8FC1862FE25DF357408617441C /* ADURLProtocol.h */,
+				60545819FA70D09CA3B67BC4BE50F00B /* ADURLProtocol.m */,
+				7F852FC13BCA874718D490EA76800D19 /* ADURLSessionDemux.h */,
+				5C603835655397F6AAB38EFA1548CCDA /* ADURLSessionDemux.m */,
+				770025D2EFF364AD1581C5D24E185187 /* ADUserIdentifier.h */,
+				EF4431ABE5D130036B0AAD179350CE92 /* ADUserIdentifier.m */,
+				D20192F42A3533C392F72792D72C6DB2 /* ADUserInformation.h */,
+				43AA60894DC06D4059A6A8CCF30369EC /* ADUserInformation.m */,
+				6C4BDC85E0A5F8AAC534E4DBB372CAA2 /* ADWebAuthController.h */,
+				72E69B64247ED7A18658DBE336A3BD5D /* ADWebAuthController.m */,
+				6C82402860244C863B9D6DB28A2D5481 /* ADWebAuthController+Internal.h */,
+				7FBA2E64CA9FB84DAD110055021E9F50 /* ADWebAuthDelegate.h */,
+				6879207316EA2EC7327FD4427BBF3898 /* ADWebAuthRequest.h */,
+				F5FA5B6F08C0D6A17022EB03D12E3E53 /* ADWebAuthRequest.m */,
+				6782C1AFB7C6A740131731DB904ACE56 /* ADWebAuthResponse.h */,
+				21C329449E3BF3E01E76B57A5E6E71E1 /* ADWebAuthResponse.m */,
+				A9FBE73F61C21A00BE1B4CB358F4631C /* ADWebFingerRequest.h */,
+				E5BCAF560496B41A82DD44C027612A39 /* ADWebFingerRequest.m */,
+				80FCF35DCF64DD03CBD06C1B8236D7FF /* ADWebRequest.h */,
+				13A9F144A8733EAD21989DF79B5FD352 /* ADWebRequest.m */,
+				EA60D5A8799764097D2F35EB0D08BCA6 /* ADWebResponse.h */,
+				3442C77B1C02C8A2666EB6EBBD583918 /* ADWebResponse.m */,
+				455A388BB7C428E9946B2AEECF1C2033 /* ADWorkPlaceJoinConstants.h */,
+				5C05D5D9AA58B924F49CF0756A14C8AC /* ADWorkPlaceJoinUtil.h */,
+				1AF17990985E26A7B5345D3F7023BA97 /* ADWorkPlaceJoinUtil.m */,
+				7E98C5D4FAB06166608A8B4C5B12C572 /* NSDictionary+ADExtensions.h */,
+				8327635EA79D8B623E22D53F36932226 /* NSDictionary+ADExtensions.m */,
+				3C972EE5B3F63852CBCD731726AD82C5 /* NSMutableDictionary+ADExtensions.h */,
+				233129293471340B3CC5D8BECA7CFC8A /* NSMutableDictionary+ADExtensions.m */,
+				DA0F8839E21F4925E774E5B1B7C2835F /* NSString+ADHelperMethods.h */,
+				46C0092E2BBD8C603C9A2C8378C4955A /* NSString+ADHelperMethods.m */,
+				C36D6C24761E819A43F4E198DA607746 /* NSURL+ADExtensions.h */,
+				24748E0557DBB9472D88C1C4E107407E /* NSURL+ADExtensions.m */,
+				B690367208CEFFC077BD892DA377F41C /* NSUUID+ADExtensions.h */,
+				D4EE346B931D060CAF3E5755909AFE77 /* NSUUID+ADExtensions.m */,
+				7A4B798C9EA86D49BA441E7009AF7351 /* UIApplication+ADExtensions.h */,
+				D141E63D760FFCBEFE06630117CEEB34 /* UIApplication+ADExtensions.m */,
+			);
+			name = "app-lib";
+			sourceTree = "<group>";
+		};
+		49ACEE2D37C5E3012EEFD524F96E3338 /* ADAL */ = {
+			isa = PBXGroup;
+			children = (
+				3DF58FA1F5D81F371358319DBFD09082 /* app-lib */,
+				D8E64B16149FBA44B9AF6977D3C3F509 /* Support Files */,
+				E1CE67A260C77F729EC26C21C2C48591 /* tokencacheheader */,
+			);
+			name = ADAL;
+			path = ADAL;
+			sourceTree = "<group>";
+		};
+		6855BAE906593BF381CCDC060ADBF4C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				581FB7AFFD435302D4B80C305D46AA71 /* ADAL.framework */,
+				565C447329B57FE886F1F548BEB0C0C5 /* Pods_AzureAD.framework */,
+				8F5E50C92016B15D6630ACB3594C9749 /* Pods_AzureADTests.framework */,
+				6E7355386889CF0483A3AA07B3719CFA /* Pods_AzureADUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B2E1F2A5A4ADF0EA7CC1BB3E74346F4E /* Pods */,
+				6855BAE906593BF381CCDC060ADBF4C2 /* Products */,
+				C18DE19E9C20176DAC9D3845B0993016 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E2EE33AA9383146786F35FB91BDBD32 /* Pods-AzureAD */ = {
+			isa = PBXGroup;
+			children = (
+				E279B57584024D2EC5A988641FD3FF80 /* Info.plist */,
+				8DC41F6DC8D185BF9E31957E7C04FE2C /* Pods-AzureAD.modulemap */,
+				D79B98315DE056623860A52C403CD2BD /* Pods-AzureAD-acknowledgements.markdown */,
+				F7BF67EBF6EF90232F6189FE3FEF0A5A /* Pods-AzureAD-acknowledgements.plist */,
+				17F5C513EB70E1762BFD463A208987EE /* Pods-AzureAD-dummy.m */,
+				367226682B14C4256CE7989987798EB1 /* Pods-AzureAD-frameworks.sh */,
+				BC4435C8CABFC11BD7CDB47F76905798 /* Pods-AzureAD-resources.sh */,
+				D6D5F84AFF3DFB101DAA00ECEA434EBA /* Pods-AzureAD-umbrella.h */,
+				2543A8ACFCC598534A38F0A7B0CBC28A /* Pods-AzureAD.debug.xcconfig */,
+				EB7B221829B7ADD85E06EE8AE36663B5 /* Pods-AzureAD.release.xcconfig */,
+			);
+			name = "Pods-AzureAD";
+			path = "Target Support Files/Pods-AzureAD";
+			sourceTree = "<group>";
+		};
+		85DFE3D79714C089B0610EA112307BD9 /* Pods-AzureADTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D384057B8F666106100459796A2625A /* Info.plist */,
+				A6FFA2D9756E0CE31350FB23035A9AEC /* Pods-AzureADTests.modulemap */,
+				094D08891CD198006D6BF45F8A9FCB61 /* Pods-AzureADTests-acknowledgements.markdown */,
+				AA361F224F0CC55DAF9658A9C7B81347 /* Pods-AzureADTests-acknowledgements.plist */,
+				761E579DAB0722280E21F732F464342F /* Pods-AzureADTests-dummy.m */,
+				D9BF66322AB7FEF6C9E574518DC5680B /* Pods-AzureADTests-frameworks.sh */,
+				785DCDD8C4D2BBEB572311C976D32B0D /* Pods-AzureADTests-resources.sh */,
+				68219DD5B8F62A7258897BEE206763E9 /* Pods-AzureADTests-umbrella.h */,
+				32AA393BE287B11DA17EAEE85BB604D1 /* Pods-AzureADTests.debug.xcconfig */,
+				B70F6A914BEC5D131CD65D31F27AB2C8 /* Pods-AzureADTests.release.xcconfig */,
+			);
+			name = "Pods-AzureADTests";
+			path = "Target Support Files/Pods-AzureADTests";
+			sourceTree = "<group>";
+		};
+		B2E1F2A5A4ADF0EA7CC1BB3E74346F4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49ACEE2D37C5E3012EEFD524F96E3338 /* ADAL */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C18DE19E9C20176DAC9D3845B0993016 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E2EE33AA9383146786F35FB91BDBD32 /* Pods-AzureAD */,
+				85DFE3D79714C089B0610EA112307BD9 /* Pods-AzureADTests */,
+				C609ABA4FBABEACD65E1386E4FAAFDAD /* Pods-AzureADUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C609ABA4FBABEACD65E1386E4FAAFDAD /* Pods-AzureADUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5EAC47EFB5352AFC611783A2178F6E /* Info.plist */,
+				131B826E2ED424216D820A3B1D878AC6 /* Pods-AzureADUITests.modulemap */,
+				40EF9728DDC26591240DD9E182D172DB /* Pods-AzureADUITests-acknowledgements.markdown */,
+				FC87BF1707F9341F010E4A36763A66AF /* Pods-AzureADUITests-acknowledgements.plist */,
+				E87D2FA82B96120E649EC3612942C5DF /* Pods-AzureADUITests-dummy.m */,
+				49358F1F6B46A7283654BDCC467C6244 /* Pods-AzureADUITests-frameworks.sh */,
+				D77D88E721EF6D7615C79D9D98F72F31 /* Pods-AzureADUITests-resources.sh */,
+				99828423A543EC4C036417BF9979C762 /* Pods-AzureADUITests-umbrella.h */,
+				3A4D6B5DEDCB6782C0BAE82C2BEE63D2 /* Pods-AzureADUITests.debug.xcconfig */,
+				21B2B1619266C334468508542D9DFFE4 /* Pods-AzureADUITests.release.xcconfig */,
+			);
+			name = "Pods-AzureADUITests";
+			path = "Target Support Files/Pods-AzureADUITests";
+			sourceTree = "<group>";
+		};
+		D8E64B16149FBA44B9AF6977D3C3F509 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1FF66FE7913513DDACF7C067846ED /* ADAL.modulemap */,
+				F5BAEA1226248DC5415B6841C7766479 /* ADAL.xcconfig */,
+				D0282BEB3DCEEB5617D7C69E3C673FF1 /* ADAL-dummy.m */,
+				BA04C2543DD8C77C4EA1017429F38394 /* ADAL-prefix.pch */,
+				54FD31900E3061460F8FAE99DFCDB659 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ADAL";
+			sourceTree = "<group>";
+		};
+		E1CE67A260C77F729EC26C21C2C48591 /* tokencacheheader */ = {
+			isa = PBXGroup;
+			children = (
+				617E7ED153AA7A6878FE1B499B81CEE4 /* ADTokenCache.h */,
+			);
+			name = tokencacheheader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		503DB98B2020FCF78D3E35CC204363AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C00E50338957B4C2F43FABA2F12B8F6 /* Pods-AzureADTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628C0E463FE89D9F7E01CCBD26CF8F97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB90BE6D60B6B739B25501D1E11DE1E /* ADAcquireTokenSilentHandler.h in Headers */,
+				45F9F7380DEDFC4F36C454D1D88643E3 /* ADAggregatedDispatcher.h in Headers */,
+				CACBCF4B985AC461E520D29BBDC91405 /* ADAL.h in Headers */,
+				FE1067407E7C10277D1311D90245EC9E /* ADAL_Internal.h in Headers */,
+				F34F3B477C2E9ADA6E1B4DDC496DC574 /* ADALFrameworkUtils.h in Headers */,
+				BF790E9C82C6169DBE1956DE79C85352 /* ADAppExtensionUtil.h in Headers */,
+				5F5191EF47421A6D88108E91FF71DADA /* ADAuthenticationContext+Internal.h in Headers */,
+				C1A5DBA14E5125257B547FC65A79641E /* ADAuthenticationContext.h in Headers */,
+				789F3B8FEC5C69500D626EE8D46BBF03 /* ADAuthenticationError+Internal.h in Headers */,
+				85429F15EBA1399F0ED604371BB973AB /* ADAuthenticationError.h in Headers */,
+				70A31D05A27716C7BCA0D2AE5D5FF212 /* ADAuthenticationParameters+Internal.h in Headers */,
+				65F6F9E0BA1DA71FE0F2C932746645F6 /* ADAuthenticationParameters.h in Headers */,
+				769FABDB193D60D55946C263A338B8EA /* ADAuthenticationRequest+AcquireAssertion.h in Headers */,
+				1ACCAB7A21A7132B1873D59267DD40A0 /* ADAuthenticationRequest+AcquireToken.h in Headers */,
+				5F0E6E5CA6564CC2DEBE9E80C64446BC /* ADAuthenticationRequest+Broker.h in Headers */,
+				21D261989067E339855C0488EA8CBC60 /* ADAuthenticationRequest+WebRequest.h in Headers */,
+				41D7CC4096E8A67D573A3704054C2748 /* ADAuthenticationRequest.h in Headers */,
+				11001F33429D703E4CF9C01FEC9CAEE0 /* ADAuthenticationResult+Internal.h in Headers */,
+				FAB7BA367957A2A0B2A5B819BFF5DE2E /* ADAuthenticationResult.h in Headers */,
+				431112540442FADA1DC13DF01D4F3D80 /* ADAuthenticationSettings.h in Headers */,
+				5BBB0F09F590E30026D4D82FA4AAD028 /* ADAuthenticationViewController.h in Headers */,
+				B8418DA723B7430A720CFA5630D5B2ED /* ADAuthorityValidation.h in Headers */,
+				8F1EA1EF282AE4F26C5758B190497D72 /* ADAuthorityValidationRequest.h in Headers */,
+				4A75E253731F09F93F712B3D767AA807 /* ADBrokerHelper.h in Headers */,
+				712E867D49C1CCA476C44CB5F167DFD6 /* ADBrokerKeyHelper.h in Headers */,
+				9D76F04D2997ACECAD0CC8EB8462A3A6 /* ADBrokerNotificationManager.h in Headers */,
+				EE8D2BA796FDC6731405B535EEDF1227 /* ADClientMetrics.h in Headers */,
+				36FC267EEEC5C9E5428992F0D77F3793 /* ADCustomHeaderHandler.h in Headers */,
+				172C8A701C8B6302455F7CA6AA48ADDD /* ADDefaultDispatcher.h in Headers */,
+				E3AEF78FEFD555BA47374DAF55734B96 /* ADDrsDiscoveryRequest.h in Headers */,
+				85686F6A4828E2BACC9997855C31B2E4 /* ADErrorCodes.h in Headers */,
+				A443AEC3EEC4C48A2D6172D1E81F96A6 /* ADHelpers.h in Headers */,
+				9FD0D1DBBA9820998354EECF10B3AFE6 /* ADIpAddressHelper.h in Headers */,
+				73B715F4DCAA765E4081737B3553EBC6 /* ADJwtHelper.h in Headers */,
+				87D477334297F802771F3573730E85B7 /* ADKeychainTokenCache+Internal.h in Headers */,
+				FE0FAD60CEB6B0A370A70D636194DEC7 /* ADKeychainTokenCache.h in Headers */,
+				35145C3965D750B8065B367D60350E57 /* ADKeychainUtil.h in Headers */,
+				6BB91EE777E1DBA8023AC23F5FB26B6E /* ADLogger+Internal.h in Headers */,
+				E2CCAAAE6682D481C928B2576AE07258 /* ADLogger.h in Headers */,
+				75F8DBFF8BE82C003B8B704125518DFB /* ADNTLMHandler.h in Headers */,
+				227342467939686199F2388397076308 /* ADNTLMUIPrompt.h in Headers */,
+				AF5CD243A10365E40A514CD1A3A12C1F /* ADOAuth2Constants.h in Headers */,
+				EC1332313C0213BE0341816AD8AD16B2 /* ADPkeyAuthHelper.h in Headers */,
+				E4484177DE541AD0EA6C3F6ACC6E8497 /* ADRegistrationInformation.h in Headers */,
+				F1403C4A991541CA5DAB443F5205AFA6 /* ADRequestContext.h in Headers */,
+				BA97E7BF0111C6D006DACA4228511CF9 /* ADRequestParameters.h in Headers */,
+				DCA4F36FFB13415736FB00A98A6100D6 /* ADTelemetry+Internal.h in Headers */,
+				874E60DE47D558F25840947052605530 /* ADTelemetry.h in Headers */,
+				AB79A3D1771068B08651AC68A3763C14 /* ADTelemetryAPIEvent.h in Headers */,
+				B7CF702DC10E6658657D4C2409BA425A /* ADTelemetryBrokerEvent.h in Headers */,
+				8B0D4DC50FF03925D7339C4C048AC9B3 /* ADTelemetryCacheEvent.h in Headers */,
+				DFAD9B993A3AEE8BB7152A4449B8E6D8 /* ADTelemetryCollectionRules.h in Headers */,
+				14708352EB678F500800B3EB177AE973 /* ADTelemetryDefaultEvent.h in Headers */,
+				46BE7AED2A93393A245B108A7DB521F8 /* ADTelemetryEventInterface.h in Headers */,
+				99C3BFB12A65EAE28A4EAF0C27AFE6BA /* ADTelemetryEventStrings.h in Headers */,
+				2B63EC84153EFF04F0B15C95D15F437F /* ADTelemetryHttpEvent.h in Headers */,
+				1A7FED42A194910E80D794580CB9FE16 /* ADTelemetryUIEvent.h in Headers */,
+				F89A973CD6E084638ED6D5E6E292FFD3 /* ADTokenCache+Internal.h in Headers */,
+				AB0F193DB887C15366ADD4BFA0ADF4BD /* ADTokenCache.h in Headers */,
+				F254F3A80668A67635AFAFF77FF7EB9A /* ADTokenCacheAccessor.h in Headers */,
+				A9B70E5D73FBB81C09D64297D8E86D98 /* ADTokenCacheDataSource.h in Headers */,
+				57595E010C24A2F9E84E195DFB65419C /* ADTokenCacheItem+Internal.h in Headers */,
+				F54D512E6FAA0709650352CEA797A787 /* ADTokenCacheItem.h in Headers */,
+				9A53F056E01D5F686567BFCD44A84532 /* ADTokenCacheKey.h in Headers */,
+				7FFFB5C72ECC9F8741B18F927302D38D /* ADURLProtocol.h in Headers */,
+				57D4B74B4889A35E3FA4D1C654AA5AA8 /* ADURLSessionDemux.h in Headers */,
+				77829E7A09183733951F5DA04E4CF9FF /* ADUserIdentifier.h in Headers */,
+				136761A3C886202E605D342F9F08F750 /* ADUserInformation.h in Headers */,
+				D20B6D2557A5C75F2024DBC00BF753C5 /* ADWebAuthController+Internal.h in Headers */,
+				74860CE1B37BA0B2ABEABF23A2272242 /* ADWebAuthController.h in Headers */,
+				1E9B96A7522A1BF4C9C05B2A9055A5EF /* ADWebAuthDelegate.h in Headers */,
+				BFF9A578AEEA85653C22DCCA7CF7ADC4 /* ADWebAuthRequest.h in Headers */,
+				402C2CA83627FBBF9018F9B6716C1368 /* ADWebAuthResponse.h in Headers */,
+				F96CF3ADE72FE5DE1426FFEB6A9B7869 /* ADWebFingerRequest.h in Headers */,
+				7E6258CAD1AA9050181AA1DDEA0E1B69 /* ADWebRequest.h in Headers */,
+				21E3D6C5E506AEE1513A4DCACB04BE7C /* ADWebResponse.h in Headers */,
+				5732647E141B3BA25C944728390648D6 /* ADWorkPlaceJoinConstants.h in Headers */,
+				BD2189D62EB42F91F036A44EBC9864BF /* ADWorkPlaceJoinUtil.h in Headers */,
+				836CFBE00FF71C5CA3E0E3B64BC5859E /* NSDictionary+ADExtensions.h in Headers */,
+				7A855D52482DA9B7A80582AEE65516D6 /* NSMutableDictionary+ADExtensions.h in Headers */,
+				BC18530D713C622483F18F9C6E1FCE52 /* NSString+ADHelperMethods.h in Headers */,
+				728EB8DBEA34CE816462A8A2504B8B2E /* NSURL+ADExtensions.h in Headers */,
+				C0B1301787A7183207D022380BEE5541 /* NSUUID+ADExtensions.h in Headers */,
+				FBA88723EB2E9333D0B02E84B1BBB5A4 /* UIApplication+ADExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B333210C6A40F8C6625CCC0C9EC1B52B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBE05D0C07D2438F9B41872CFAABDB /* Pods-AzureADUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF273FB233C35058F66AE443D126E670 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E07762499FAFF7FE3921E1C865A031 /* Pods-AzureAD-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2983FC945CC2636003F671CC62E5B714 /* Pods-AzureADTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53727F1BFA3A481618B0D6BDE2F13911 /* Build configuration list for PBXNativeTarget "Pods-AzureADTests" */;
+			buildPhases = (
+				BE91B50BF4D8C65D09DF51A46034F0FF /* Sources */,
+				E554E60E815CE1DBADE7384689EDE2A4 /* Frameworks */,
+				503DB98B2020FCF78D3E35CC204363AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AzureADTests";
+			productName = "Pods-AzureADTests";
+			productReference = 8F5E50C92016B15D6630ACB3594C9749 /* Pods_AzureADTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5BE1376413EFEF8AAAABC1FB096E710D /* Pods-AzureAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35680D47FF6AFE4CE4230F06FB9A585B /* Build configuration list for PBXNativeTarget "Pods-AzureAD" */;
+			buildPhases = (
+				2AEAB7918EA0C69EA34DBE801D4A9C38 /* Sources */,
+				7CC3FB8C16FC511691CADC5BDAD126A6 /* Frameworks */,
+				CF273FB233C35058F66AE443D126E670 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4F9E1B81355D41EEDD258F57E71B8FA /* PBXTargetDependency */,
+			);
+			name = "Pods-AzureAD";
+			productName = "Pods-AzureAD";
+			productReference = 565C447329B57FE886F1F548BEB0C0C5 /* Pods_AzureAD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CEA0E14615E31F9D83BB1C6B0C7EF0D /* Pods-AzureADUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 155B3625C419B8B7648B5139C4022CB2 /* Build configuration list for PBXNativeTarget "Pods-AzureADUITests" */;
+			buildPhases = (
+				286AB04CB725B7138D349EEAC4849123 /* Sources */,
+				3DB7B07BA2B26D7FDD302A81FA12C16A /* Frameworks */,
+				B333210C6A40F8C6625CCC0C9EC1B52B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AzureADUITests";
+			productName = "Pods-AzureADUITests";
+			productReference = 6E7355386889CF0483A3AA07B3719CFA /* Pods_AzureADUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFAECA976AD335F5A942AA0C717EDB43 /* ADAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B3A039002870D2F69E14523A48DF5E /* Build configuration list for PBXNativeTarget "ADAL" */;
+			buildPhases = (
+				182558F9FFA21CEB166426EF1D00B30E /* Sources */,
+				B807D6B51F5EE741302E2DBA2DC88ECB /* Frameworks */,
+				628C0E463FE89D9F7E01CCBD26CF8F97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADAL;
+			productName = ADAL;
+			productReference = 581FB7AFFD435302D4B80C305D46AA71 /* ADAL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6855BAE906593BF381CCDC060ADBF4C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFAECA976AD335F5A942AA0C717EDB43 /* ADAL */,
+				5BE1376413EFEF8AAAABC1FB096E710D /* Pods-AzureAD */,
+				2983FC945CC2636003F671CC62E5B714 /* Pods-AzureADTests */,
+				8CEA0E14615E31F9D83BB1C6B0C7EF0D /* Pods-AzureADUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182558F9FFA21CEB166426EF1D00B30E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8A42647A6133243F986CA6F1DEE726 /* ADAcquireTokenSilentHandler.m in Sources */,
+				D133AF1E0D38BEE3142B2425E5B524AE /* ADAggregatedDispatcher.m in Sources */,
+				C9992B646AF102362E2F427705D08266 /* ADAL-dummy.m in Sources */,
+				B8BAAE7DC3F86CFD761FB27916C0AE90 /* ADAL.m in Sources */,
+				E2BC3E00448D4BAEC053309DE7305850 /* ADALFrameworkUtils.m in Sources */,
+				88AABACABF8285A50C5FAB2FFE19599B /* ADAppExtensionUtil.m in Sources */,
+				37BC4CAE4155967EF7AF39FBD02CF4C7 /* ADAuthenticationContext+Internal.m in Sources */,
+				F88A7BE14A8EFB85D472473BADE70B8A /* ADAuthenticationContext.m in Sources */,
+				1F310B097D470046B058CB728FBAF67A /* ADAuthenticationError.m in Sources */,
+				915D0C9F9A7B3BACAFB34432B5F4B05D /* ADAuthenticationParameters+Internal.m in Sources */,
+				D4405FA8C2B38CBED273F09FAC3417ED /* ADAuthenticationParameters.m in Sources */,
+				A474BF52B7FD5D9AE3D54C25A1F9F3BE /* ADAuthenticationRequest+AcquireAssertion.m in Sources */,
+				99CAAA79774A9DA6D37525CA642F0DCB /* ADAuthenticationRequest+AcquireToken.m in Sources */,
+				BF902A1F478D12DD72F36642C56C8363 /* ADAuthenticationRequest+Broker.m in Sources */,
+				0A5999813C5243CE6A7F011B0EF89599 /* ADAuthenticationRequest+WebRequest.m in Sources */,
+				5A641643F61B3AE68EBDF75906BE119D /* ADAuthenticationRequest.m in Sources */,
+				50C2033FA949975760662D4A56AB8EDF /* ADAuthenticationResult+Internal.m in Sources */,
+				64D73C81F1A9E278958376AA88307898 /* ADAuthenticationResult.m in Sources */,
+				0EAF7CA2DDDEAEF24C63A8A4E76D51BE /* ADAuthenticationSettings.m in Sources */,
+				F3097418376847FDA7432D895871E8AB /* ADAuthenticationViewController.m in Sources */,
+				2BBF206046A8AB14547382EDB81C9C9B /* ADAuthorityValidation.m in Sources */,
+				684E603C5F85BA5F115567683283A330 /* ADAuthorityValidationRequest.m in Sources */,
+				FE3BAE559E4E6A954A3A81F2B6DEE511 /* ADBrokerHelper.m in Sources */,
+				57CB2D8746C5164647F50C0403E89BAB /* ADBrokerKeyHelper.m in Sources */,
+				A039BC092620568CC189DB965F230F42 /* ADBrokerNotificationManager.m in Sources */,
+				0B126AFAB51794EA13DF86E58808B63C /* ADClientMetrics.m in Sources */,
+				CBE4532D261865B37F89E68ED07A59F4 /* ADCustomHeaderHandler.m in Sources */,
+				21944CA6895A0B9322227909A71DD0A8 /* ADDefaultDispatcher.m in Sources */,
+				703C8C0DE950BC8259BEF1CD1159A9B0 /* ADDrsDiscoveryRequest.m in Sources */,
+				19FE3FA054E98B435C2C1DAC2B5A3D3B /* ADHelpers.m in Sources */,
+				65EFFF4A1BB91E01AF50AC6D246CF9F3 /* ADIpAddressHelper.m in Sources */,
+				80C121801B6678403571410CAECC6A3E /* ADJwtHelper.m in Sources */,
+				9856A268C8B81A98FB3A17A67DE33F12 /* ADKeychainTokenCache.m in Sources */,
+				0A23E1118673DECADFC7422CD9E7D14F /* ADKeychainUtil.m in Sources */,
+				7D892FEE12C37DBB92F0AA9BC25E4DB5 /* ADLogger.m in Sources */,
+				25819753AA7FABC9E8DB0E92706B3D77 /* ADNTLMHandler.m in Sources */,
+				726DE6841C0C9AF4FEF8F873D7EB2428 /* ADNTLMUIPrompt.m in Sources */,
+				FD7FAE9B660B48538AF22D89DD54D383 /* ADOAuth2Constants.m in Sources */,
+				EC7CB7ECC5A6DA2A37BD946883F0BE49 /* ADPkeyAuthHelper.m in Sources */,
+				82D788F11F0341CF54FD39A5CD562B6A /* ADRegistrationInformation.m in Sources */,
+				FD828C967963814D1047684F5459F964 /* ADRequestParameters.m in Sources */,
+				77E73F5B20183F867566E902940A067E /* ADTelemetry.m in Sources */,
+				5C2F5C2B84E4B1F1447A9E2F3EF8E6B2 /* ADTelemetryAPIEvent.m in Sources */,
+				B8D01863A63D9F4D01063A6AAFE919E2 /* ADTelemetryBrokerEvent.m in Sources */,
+				86B4EF9CAB1F95930A737F11BF10C2C3 /* ADTelemetryCacheEvent.m in Sources */,
+				A8E331AE2D457C1F1A952C6D4A45EBE1 /* ADTelemetryCollectionRules.m in Sources */,
+				8D6C945E7A7B1745B5B802C58BE0F975 /* ADTelemetryDefaultEvent.m in Sources */,
+				C4369FC65B65672F6B5A60D746D9320E /* ADTelemetryEventStrings.m in Sources */,
+				BC8C15757B0A973A751A6E5D4E499D80 /* ADTelemetryHttpEvent.m in Sources */,
+				70E55EA4252E25A094539798BC515D36 /* ADTelemetryUIEvent.m in Sources */,
+				8CB78DC1EF3C7F15DF62C4D5831AE20A /* ADTokenCache.m in Sources */,
+				D3F9E2DD7C5251C2EDC9FDC302BE1587 /* ADTokenCacheAccessor.m in Sources */,
+				F1FEEF5B594A22637284771ACCCE535F /* ADTokenCacheItem+Internal.m in Sources */,
+				8B9D7788D531B5B5A95D2C9D3BC21098 /* ADTokenCacheItem.m in Sources */,
+				8F9B5456A23417BD60EB06206A5194D5 /* ADTokenCacheKey.m in Sources */,
+				9284D02871431F03DBF3AC8713E285B9 /* ADURLProtocol.m in Sources */,
+				E00C6F9013BF0FF8B7184599C5F9BF46 /* ADURLSessionDemux.m in Sources */,
+				F4ACCAEF317CE85CA5B358D8900B620A /* ADUserIdentifier.m in Sources */,
+				63603BE2B6A3F74EF556F41508BB613E /* ADUserInformation.m in Sources */,
+				6D5FFC71A926B5045652CF64BC3BE56A /* ADWebAuthController.m in Sources */,
+				A86F939690BA0FEE5CBDD9A5BE31D254 /* ADWebAuthRequest.m in Sources */,
+				C29814A726D73DAB5905F175F5399F8A /* ADWebAuthResponse.m in Sources */,
+				5A6F0133A63C205F3EA674AAAFD0585E /* ADWebFingerRequest.m in Sources */,
+				4E444D7B9DDD85B8EB9AB58AECF2C244 /* ADWebRequest.m in Sources */,
+				AC2790A4AD75092924AB78F2D8665B8D /* ADWebResponse.m in Sources */,
+				A2A7B3DD8FD73EF7A97DDCCA5511AEDC /* ADWorkPlaceJoinUtil.m in Sources */,
+				1E0461ACE2E41358C63C031B3A04B132 /* NSDictionary+ADExtensions.m in Sources */,
+				7508A301BF86E97C73BEE513CCB66331 /* NSMutableDictionary+ADExtensions.m in Sources */,
+				1648174B4B6AB747586CBD82189D3579 /* NSString+ADHelperMethods.m in Sources */,
+				20A05929064AB328083D22629B30C160 /* NSURL+ADExtensions.m in Sources */,
+				D05DA4BEAA212F1879FA7E02F9EFD04A /* NSUUID+ADExtensions.m in Sources */,
+				8D0612DF44BE57AF1180BADC2D3EA8AC /* UIApplication+ADExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286AB04CB725B7138D349EEAC4849123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C96CBFB1DAD508D5BD13D925D851F74 /* Pods-AzureADUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AEAB7918EA0C69EA34DBE801D4A9C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F498E2E0E68C5EBBF647409D96242CB /* Pods-AzureAD-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE91B50BF4D8C65D09DF51A46034F0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5787F2837418DA8F88163CB57DE9CD /* Pods-AzureADTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4F9E1B81355D41EEDD258F57E71B8FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ADAL;
+			target = EFAECA976AD335F5A942AA0C717EDB43 /* ADAL */;
+			targetProxy = C63EAFDA615AB799C31A52ECE9A87EAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		146B7CCB190D1990BFE110105E82AF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32AA393BE287B11DA17EAEE85BB604D1 /* Pods-AzureADTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureADTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureADTests/Pods-AzureADTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureADTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B518488E86EDCB5FF96F2AA86803C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2543A8ACFCC598534A38F0A7B0CBC28A /* Pods-AzureAD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureAD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureAD/Pods-AzureAD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureAD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9EDC146D12C5378C8AE132AA89DA566C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B70F6A914BEC5D131CD65D31F27AB2C8 /* Pods-AzureADTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureADTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureADTests/Pods-AzureADTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureADTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A861E1347598E7BE48B6049A185436A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5BAEA1226248DC5415B6841C7766479 /* ADAL.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ADAL/ADAL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ADAL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ADAL/ADAL.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ADAL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DA4138839B406554D8903E3D9BE3B06B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4D6B5DEDCB6782C0BAE82C2BEE63D2 /* Pods-AzureADUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureADUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureADUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF82C7F55C72D87A66C1FE4896E4E5A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B2B1619266C334468508542D9DFFE4 /* Pods-AzureADUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureADUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureADUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1E27B396FFFCF5B17637E676D62BB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5BAEA1226248DC5415B6841C7766479 /* ADAL.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ADAL/ADAL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ADAL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ADAL/ADAL.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ADAL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7EEE949DE5733ECE5DC016B1D4E8685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7B221829B7ADD85E06EE8AE36663B5 /* Pods-AzureAD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureAD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureAD/Pods-AzureAD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureAD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		155B3625C419B8B7648B5139C4022CB2 /* Build configuration list for PBXNativeTarget "Pods-AzureADUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4138839B406554D8903E3D9BE3B06B /* Debug */,
+				DF82C7F55C72D87A66C1FE4896E4E5A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35680D47FF6AFE4CE4230F06FB9A585B /* Build configuration list for PBXNativeTarget "Pods-AzureAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B518488E86EDCB5FF96F2AA86803C55 /* Debug */,
+				F7EEE949DE5733ECE5DC016B1D4E8685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53727F1BFA3A481618B0D6BDE2F13911 /* Build configuration list for PBXNativeTarget "Pods-AzureADTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				146B7CCB190D1990BFE110105E82AF77 /* Debug */,
+				9EDC146D12C5378C8AE132AA89DA566C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B3A039002870D2F69E14523A48DF5E /* Build configuration list for PBXNativeTarget "ADAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A861E1347598E7BE48B6049A185436A2 /* Debug */,
+				F1E27B396FFFCF5B17637E676D62BB2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

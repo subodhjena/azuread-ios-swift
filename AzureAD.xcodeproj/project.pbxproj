@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34C1D855AAC91B034870309C /* Pods_AzureADUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFA0905E6F8DCE6A37B5B2F /* Pods_AzureADUITests.framework */; };
+		8F2733A4B870AD6EFBDECDA1 /* Pods_AzureAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0652F1E923B4BA8098862E66 /* Pods_AzureAD.framework */; };
 		C28304D81EC2E2870037E3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304D71EC2E2870037E3D6 /* AppDelegate.swift */; };
 		C28304DA1EC2E2870037E3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304D91EC2E2870037E3D6 /* ViewController.swift */; };
 		C28304DD1EC2E2870037E3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28304DB1EC2E2870037E3D6 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		C28304E21EC2E2870037E3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28304E01EC2E2870037E3D6 /* LaunchScreen.storyboard */; };
 		C28304ED1EC2E2870037E3D6 /* AzureADTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304EC1EC2E2870037E3D6 /* AzureADTests.swift */; };
 		C28304F81EC2E2870037E3D6 /* AzureADUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304F71EC2E2870037E3D6 /* AzureADUITests.swift */; };
+		EF901A3B98CF77F24F72EF5F /* Pods_AzureADTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D518719A827DE5BF9ED81 /* Pods_AzureADTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0652F1E923B4BA8098862E66 /* Pods_AzureAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureAD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		274D518719A827DE5BF9ED81 /* Pods_AzureADTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureADTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFA0905E6F8DCE6A37B5B2F /* Pods_AzureADUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureADUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71104BB980AD9CA7836D94E0 /* Pods-AzureADTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADTests/Pods-AzureADTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89FA10DAB1FD59D67A912445 /* Pods-AzureADUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B20B7167F86BBAC7EE3B98DD /* Pods-AzureADUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B699F7F6328CFAEF55A5AAE9 /* Pods-AzureAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD.debug.xcconfig"; sourceTree = "<group>"; };
 		C28304D41EC2E2870037E3D6 /* AzureAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28304D71EC2E2870037E3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28304D91EC2E2870037E3D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		C28304F31EC2E2870037E3D6 /* AzureADUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzureADUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28304F71EC2E2870037E3D6 /* AzureADUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureADUITests.swift; sourceTree = "<group>"; };
 		C28304F91EC2E2870037E3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D0B4495D052E2127B577BF /* Pods-AzureADTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADTests/Pods-AzureADTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC2BE160BB184A035D775F90 /* Pods-AzureAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAD.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2733A4B870AD6EFBDECDA1 /* Pods_AzureAD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF901A3B98CF77F24F72EF5F /* Pods_AzureADTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C1D855AAC91B034870309C /* Pods_AzureADUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A93A16DA0292646B26D50F63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0652F1E923B4BA8098862E66 /* Pods_AzureAD.framework */,
+				274D518719A827DE5BF9ED81 /* Pods_AzureADTests.framework */,
+				6FFA0905E6F8DCE6A37B5B2F /* Pods_AzureADUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7F487BC9786AEE59E90378C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B699F7F6328CFAEF55A5AAE9 /* Pods-AzureAD.debug.xcconfig */,
+				CC2BE160BB184A035D775F90 /* Pods-AzureAD.release.xcconfig */,
+				71104BB980AD9CA7836D94E0 /* Pods-AzureADTests.debug.xcconfig */,
+				C8D0B4495D052E2127B577BF /* Pods-AzureADTests.release.xcconfig */,
+				89FA10DAB1FD59D67A912445 /* Pods-AzureADUITests.debug.xcconfig */,
+				B20B7167F86BBAC7EE3B98DD /* Pods-AzureADUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C28304CB1EC2E2870037E3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				C28304EB1EC2E2870037E3D6 /* AzureADTests */,
 				C28304F61EC2E2870037E3D6 /* AzureADUITests */,
 				C28304D51EC2E2870037E3D6 /* Products */,
+				B7F487BC9786AEE59E90378C /* Pods */,
+				A93A16DA0292646B26D50F63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C28304FC1EC2E2870037E3D6 /* Build configuration list for PBXNativeTarget "AzureAD" */;
 			buildPhases = (
+				AC61B09E345A3243E3804DA3 /* [CP] Check Pods Manifest.lock */,
 				C28304D01EC2E2870037E3D6 /* Sources */,
 				C28304D11EC2E2870037E3D6 /* Frameworks */,
 				C28304D21EC2E2870037E3D6 /* Resources */,
+				869D760E9C411DD425B0888C /* [CP] Embed Pods Frameworks */,
+				0554E11F403A698536C42E88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C28304FF1EC2E2870037E3D6 /* Build configuration list for PBXNativeTarget "AzureADTests" */;
 			buildPhases = (
+				89F25D7EAA8441BDE8E2B24F /* [CP] Check Pods Manifest.lock */,
 				C28304E41EC2E2870037E3D6 /* Sources */,
 				C28304E51EC2E2870037E3D6 /* Frameworks */,
 				C28304E61EC2E2870037E3D6 /* Resources */,
+				53EBAD65FD8F4BEF394BEBF7 /* [CP] Embed Pods Frameworks */,
+				D66301B689AD202A4CF316CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C28305021EC2E2870037E3D6 /* Build configuration list for PBXNativeTarget "AzureADUITests" */;
 			buildPhases = (
+				F413A6B4167F2FEBD3F2E164 /* [CP] Check Pods Manifest.lock */,
 				C28304EF1EC2E2870037E3D6 /* Sources */,
 				C28304F01EC2E2870037E3D6 /* Frameworks */,
 				C28304F11EC2E2870037E3D6 /* Resources */,
+				5AA76F135194D9FF5BC8F345 /* [CP] Embed Pods Frameworks */,
+				0FA3109B500B1847F07A58E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0554E11F403A698536C42E88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FA3109B500B1847F07A58E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53EBAD65FD8F4BEF394BEBF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureADTests/Pods-AzureADTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AA76F135194D9FF5BC8F345 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		869D760E9C411DD425B0888C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F25D7EAA8441BDE8E2B24F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC61B09E345A3243E3804DA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D66301B689AD202A4CF316CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureADTests/Pods-AzureADTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F413A6B4167F2FEBD3F2E164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C28304D01EC2E2870037E3D6 /* Sources */ = {
@@ -412,6 +599,7 @@
 		};
 		C28304FD1EC2E2870037E3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B699F7F6328CFAEF55A5AAE9 /* Pods-AzureAD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AzureAD/Info.plist;
@@ -424,6 +612,7 @@
 		};
 		C28304FE1EC2E2870037E3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC2BE160BB184A035D775F90 /* Pods-AzureAD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AzureAD/Info.plist;
@@ -436,6 +625,7 @@
 		};
 		C28305001EC2E2870037E3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71104BB980AD9CA7836D94E0 /* Pods-AzureADTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +640,7 @@
 		};
 		C28305011EC2E2870037E3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D0B4495D052E2127B577BF /* Pods-AzureADTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +655,7 @@
 		};
 		C28305031EC2E2870037E3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FA10DAB1FD59D67A912445 /* Pods-AzureADUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AzureADUITests/Info.plist;
@@ -477,6 +669,7 @@
 		};
 		C28305041EC2E2870037E3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20B7167F86BBAC7EE3B98DD /* Pods-AzureADUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AzureADUITests/Info.plist;
