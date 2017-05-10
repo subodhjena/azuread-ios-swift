@@ -11,6 +11,8 @@ import Eureka
 
 class SettingsViewController: FormViewController {
 
+    // MARK: - Form Tags
+    
     private let tagAuthority = "authority"
     private let tagClientID = "clientId"
     private let tagResource = "resource"
@@ -18,7 +20,6 @@ class SettingsViewController: FormViewController {
     private let tagFullScreen = "fullScreen"
     private let tagShowClaims = "showClaims"
     private let tagCorID = "corID"
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

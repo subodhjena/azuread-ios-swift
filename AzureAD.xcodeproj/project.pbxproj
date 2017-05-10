@@ -19,6 +19,8 @@
 		C28304E21EC2E2870037E3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28304E01EC2E2870037E3D6 /* LaunchScreen.storyboard */; };
 		C28304ED1EC2E2870037E3D6 /* AzureADTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304EC1EC2E2870037E3D6 /* AzureADTests.swift */; };
 		C28304F81EC2E2870037E3D6 /* AzureADUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304F71EC2E2870037E3D6 /* AzureADUITests.swift */; };
+		C2B08BEF1EC30BB900508F67 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B08BEE1EC30BB900508F67 /* UserTableViewCell.swift */; };
+		C2B08BF11EC30BC400508F67 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B08BF01EC30BC400508F67 /* TaskTableViewCell.swift */; };
 		EF901A3B98CF77F24F72EF5F /* Pods_AzureADTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D518719A827DE5BF9ED81 /* Pods_AzureADTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		C28304F31EC2E2870037E3D6 /* AzureADUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzureADUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28304F71EC2E2870037E3D6 /* AzureADUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureADUITests.swift; sourceTree = "<group>"; };
 		C28304F91EC2E2870037E3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B08BEE1EC30BB900508F67 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		C2B08BF01EC30BC400508F67 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		C8D0B4495D052E2127B577BF /* Pods-AzureADTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADTests/Pods-AzureADTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC2BE160BB184A035D775F90 /* Pods-AzureAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAD.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +153,7 @@
 		C226E5411EC2EC1C0008A44C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C2B08BED1EC30BA100508F67 /* TableCells */,
 				C226E5431EC2EC420008A44C /* HomeViewController.swift */,
 			);
 			name = Home;
@@ -220,6 +225,15 @@
 				C28304F91EC2E2870037E3D6 /* Info.plist */,
 			);
 			path = AzureADUITests;
+			sourceTree = "<group>";
+		};
+		C2B08BED1EC30BA100508F67 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				C2B08BEE1EC30BB900508F67 /* UserTableViewCell.swift */,
+				C2B08BF01EC30BC400508F67 /* TaskTableViewCell.swift */,
+			);
+			name = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,8 +520,10 @@
 			files = (
 				C28304D81EC2E2870037E3D6 /* AppDelegate.swift in Sources */,
 				C226E5441EC2EC420008A44C /* HomeViewController.swift in Sources */,
+				C2B08BF11EC30BC400508F67 /* TaskTableViewCell.swift in Sources */,
 				C226E54A1EC2EE660008A44C /* TaskViewController.swift in Sources */,
 				C226E54C1EC2EE720008A44C /* SettingsViewController.swift in Sources */,
+				C2B08BEF1EC30BB900508F67 /* UserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

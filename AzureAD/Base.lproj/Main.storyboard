@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,15 +14,63 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="AzureAD" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="X7O-8i-Uls">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserCell" id="hMd-EO-RGW" customClass="UserTableViewCell" customModule="AzureAD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hMd-EO-RGW" id="35f-bu-4yz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subodh Jena (jenasubodh@outlook.com)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRJ-VC-nxT">
+                                            <rect key="frame" x="18" y="13" width="349" height="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BRJ-VC-nxT" secondAttribute="bottom" constant="5.5" id="Jo8-v3-6bT"/>
+                                        <constraint firstItem="BRJ-VC-nxT" firstAttribute="leading" secondItem="35f-bu-4yz" secondAttribute="leadingMargin" constant="10" id="OIS-pG-HhR"/>
+                                        <constraint firstItem="BRJ-VC-nxT" firstAttribute="top" secondItem="35f-bu-4yz" secondAttribute="topMargin" constant="5" id="m0L-qL-7lo"/>
+                                        <constraint firstItem="BRJ-VC-nxT" firstAttribute="trailing" secondItem="35f-bu-4yz" secondAttribute="trailingMargin" id="yQs-0T-g4x"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblUserName" destination="BRJ-VC-nxT" id="j42-LT-mUs"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskCell" id="B5n-uV-Z1n" customClass="TaskTableViewCell" customModule="AzureAD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B5n-uV-Z1n" id="o5n-7V-kQy">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Task Details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5V-s8-PKO">
+                                            <rect key="frame" x="16" y="14" width="318" height="16"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Q5V-s8-PKO" secondAttribute="bottom" constant="6" id="cdp-Ew-yhV"/>
+                                        <constraint firstItem="Q5V-s8-PKO" firstAttribute="top" secondItem="o5n-7V-kQy" secondAttribute="topMargin" constant="6" id="ejZ-BI-VXj"/>
+                                        <constraint firstItem="Q5V-s8-PKO" firstAttribute="leading" secondItem="o5n-7V-kQy" secondAttribute="leadingMargin" constant="8" id="vbS-2e-BTW"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Q5V-s8-PKO" secondAttribute="trailing" id="w3q-d3-18e"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblTaskDetail" destination="Q5V-s8-PKO" id="aVP-cp-Ecp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
                     <navigationItem key="navigationItem" title="Home" id="lbA-bg-iGl">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="IgN-2T-Vbj">
                             <connections>
@@ -35,13 +84,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="X7O-8i-Uls" id="iRd-85-uPM"/>
                         <segue destination="5nn-mG-3Ud" kind="show" identifier="SettingsSegue" id="yXY-SF-kNu"/>
                         <segue destination="qYM-Xw-TYx" kind="show" identifier="TaskSegue" id="xf6-zY-9Nn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="-544"/>
+            <point key="canvasLocation" x="917.60000000000002" y="-545.57721139430294"/>
         </scene>
         <!--Task-->
         <scene sceneID="dQz-yW-WI9">
