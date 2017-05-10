@@ -10,7 +10,7 @@
 		34C1D855AAC91B034870309C /* Pods_AzureADUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFA0905E6F8DCE6A37B5B2F /* Pods_AzureADUITests.framework */; };
 		8F2733A4B870AD6EFBDECDA1 /* Pods_AzureAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0652F1E923B4BA8098862E66 /* Pods_AzureAD.framework */; };
 		C226E5441EC2EC420008A44C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226E5431EC2EC420008A44C /* HomeViewController.swift */; };
-		C226E5461EC2ED7E0008A44C /* adconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C226E5451EC2ED7E0008A44C /* adconfig.plist */; };
+		C226E5461EC2ED7E0008A44C /* ADConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C226E5451EC2ED7E0008A44C /* ADConfig.plist */; };
 		C226E54A1EC2EE660008A44C /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226E5491EC2EE660008A44C /* TaskViewController.swift */; };
 		C226E54C1EC2EE720008A44C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226E54B1EC2EE720008A44C /* SettingsViewController.swift */; };
 		C28304D81EC2E2870037E3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304D71EC2E2870037E3D6 /* AppDelegate.swift */; };
@@ -21,6 +21,9 @@
 		C28304F81EC2E2870037E3D6 /* AzureADUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304F71EC2E2870037E3D6 /* AzureADUITests.swift */; };
 		C2B08BEF1EC30BB900508F67 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B08BEE1EC30BB900508F67 /* UserTableViewCell.swift */; };
 		C2B08BF11EC30BC400508F67 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B08BF01EC30BC400508F67 /* TaskTableViewCell.swift */; };
+		C2B08BF41EC31E0400508F67 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B08BF31EC31E0400508F67 /* Task.swift */; };
+		C2B08BF61EC31E0F00508F67 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B08BF51EC31E0F00508F67 /* Config.swift */; };
+		C2B08BF81EC3217D00508F67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B08BF71EC3217D00508F67 /* User.swift */; };
 		EF901A3B98CF77F24F72EF5F /* Pods_AzureADTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D518719A827DE5BF9ED81 /* Pods_AzureADTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +53,7 @@
 		B20B7167F86BBAC7EE3B98DD /* Pods-AzureADUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B699F7F6328CFAEF55A5AAE9 /* Pods-AzureAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD.debug.xcconfig"; sourceTree = "<group>"; };
 		C226E5431EC2EC420008A44C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C226E5451EC2ED7E0008A44C /* adconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adconfig.plist; sourceTree = "<group>"; };
+		C226E5451EC2ED7E0008A44C /* ADConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ADConfig.plist; sourceTree = "<group>"; };
 		C226E5491EC2EE660008A44C /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		C226E54B1EC2EE720008A44C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C28304D41EC2E2870037E3D6 /* AzureAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +70,9 @@
 		C28304F91EC2E2870037E3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2B08BEE1EC30BB900508F67 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		C2B08BF01EC30BC400508F67 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		C2B08BF31EC31E0400508F67 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C2B08BF51EC31E0F00508F67 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		C2B08BF71EC3217D00508F67 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8D0B4495D052E2127B577BF /* Pods-AzureADTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADTests/Pods-AzureADTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC2BE160BB184A035D775F90 /* Pods-AzureAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAD.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +133,7 @@
 			children = (
 				C28304E31EC2E2870037E3D6 /* Info.plist */,
 				C28304DE1EC2E2870037E3D6 /* Assets.xcassets */,
-				C226E5451EC2ED7E0008A44C /* adconfig.plist */,
+				C226E5451EC2ED7E0008A44C /* ADConfig.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 		C28304D61EC2E2870037E3D6 /* AzureAD */ = {
 			isa = PBXGroup;
 			children = (
+				C2B08BF21EC31DF400508F67 /* Models */,
 				C226E5401EC2EC0A0008A44C /* App */,
 				C226E53F1EC2EBFC0008A44C /* Modules */,
 				C226E53E1EC2EBF40008A44C /* Resources */,
@@ -234,6 +241,16 @@
 				C2B08BF01EC30BC400508F67 /* TaskTableViewCell.swift */,
 			);
 			name = TableCells;
+			sourceTree = "<group>";
+		};
+		C2B08BF21EC31DF400508F67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2B08BF31EC31E0400508F67 /* Task.swift */,
+				C2B08BF51EC31E0F00508F67 /* Config.swift */,
+				C2B08BF71EC3217D00508F67 /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +372,7 @@
 				C28304E21EC2E2870037E3D6 /* LaunchScreen.storyboard in Resources */,
 				C28304DF1EC2E2870037E3D6 /* Assets.xcassets in Resources */,
 				C28304DD1EC2E2870037E3D6 /* Main.storyboard in Resources */,
-				C226E5461EC2ED7E0008A44C /* adconfig.plist in Resources */,
+				C226E5461EC2ED7E0008A44C /* ADConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +540,9 @@
 				C2B08BF11EC30BC400508F67 /* TaskTableViewCell.swift in Sources */,
 				C226E54A1EC2EE660008A44C /* TaskViewController.swift in Sources */,
 				C226E54C1EC2EE720008A44C /* SettingsViewController.swift in Sources */,
+				C2B08BF81EC3217D00508F67 /* User.swift in Sources */,
+				C2B08BF61EC31E0F00508F67 /* Config.swift in Sources */,
+				C2B08BF41EC31E0400508F67 /* Task.swift in Sources */,
 				C2B08BEF1EC30BB900508F67 /* UserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

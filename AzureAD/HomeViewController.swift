@@ -12,6 +12,9 @@ class HomeViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    var tasks : [Task] = []
+    var users : [User] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +23,10 @@ class HomeViewController: UIViewController {
         self.tableView.delegate = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -75,10 +82,10 @@ extension HomeViewController: UITableViewDataSource {
         var rows: Int = 0
         
         if(section == 0){
-            rows = 2
+            rows = users.count
         }
         else if (section == 1) {
-            rows = 10
+            rows = tasks.count
         }
         
         return rows

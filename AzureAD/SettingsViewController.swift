@@ -25,6 +25,7 @@ class SettingsViewController: FormViewController {
         super.viewDidLoad()
 
         createForm()
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,6 +71,33 @@ class SettingsViewController: FormViewController {
                 row.placeholder = "Co-Relation ID"
                 row.tag = tagCorID
             }
+    }
+    
+    private func loadData() {
+        
+        let configValues = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "ADConfig", ofType: "plist")!)
+        let config = Config(dictionary: configValues as! Dictionary<String, Any>)
+        
+        let rowAuthority: TextRow? = form.rowBy(tag: self.tagAuthority)
+        rowAuthority?.value = config.authority
+        
+        let rowClientID: TextRow? = form.rowBy(tag: self.tagClientID)
+        rowClientID?.value = config.clientId
+        
+        let rowResource: TextRow? = form.rowBy(tag: self.tagResource)
+        rowResource?.value = config.resourceString
+        
+        let rowRedirectURI: TextRow? = form.rowBy(tag: self.tagRedirectURI)
+        rowRedirectURI?.value = config.redirectUri
+        
+        let rowFullScreen: SwitchRow? = form.rowBy(tag: self.tagFullScreen)
+        rowFullScreen?.value = config.fullScreen
+        
+        let rowShowClaims: SwitchRow? = form.rowBy(tag: self.tagShowClaims)
+        rowShowClaims?.value = config.showClaims
+        
+        let rowCorID: TextRow? = form.rowBy(tag: self.tagCorID)
+        rowCorID?.value = config.correlationId
     }
     
     // MARK: - Navigation
