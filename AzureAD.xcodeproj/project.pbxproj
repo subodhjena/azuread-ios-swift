@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		34C1D855AAC91B034870309C /* Pods_AzureADUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFA0905E6F8DCE6A37B5B2F /* Pods_AzureADUITests.framework */; };
 		8F2733A4B870AD6EFBDECDA1 /* Pods_AzureAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0652F1E923B4BA8098862E66 /* Pods_AzureAD.framework */; };
+		C226E5441EC2EC420008A44C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226E5431EC2EC420008A44C /* HomeViewController.swift */; };
 		C28304D81EC2E2870037E3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304D71EC2E2870037E3D6 /* AppDelegate.swift */; };
-		C28304DA1EC2E2870037E3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28304D91EC2E2870037E3D6 /* ViewController.swift */; };
 		C28304DD1EC2E2870037E3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28304DB1EC2E2870037E3D6 /* Main.storyboard */; };
 		C28304DF1EC2E2870037E3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28304DE1EC2E2870037E3D6 /* Assets.xcassets */; };
 		C28304E21EC2E2870037E3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28304E01EC2E2870037E3D6 /* LaunchScreen.storyboard */; };
@@ -44,9 +44,9 @@
 		89FA10DAB1FD59D67A912445 /* Pods-AzureADUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B20B7167F86BBAC7EE3B98DD /* Pods-AzureADUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureADUITests/Pods-AzureADUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B699F7F6328CFAEF55A5AAE9 /* Pods-AzureAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureAD/Pods-AzureAD.debug.xcconfig"; sourceTree = "<group>"; };
+		C226E5431EC2EC420008A44C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C28304D41EC2E2870037E3D6 /* AzureAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28304D71EC2E2870037E3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C28304D91EC2E2870037E3D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C28304DC1EC2E2870037E3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C28304DE1EC2E2870037E3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28304E11EC2E2870037E3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,6 +112,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C226E53E1EC2EBF40008A44C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C28304E31EC2E2870037E3D6 /* Info.plist */,
+				C28304DE1EC2E2870037E3D6 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C226E53F1EC2EBFC0008A44C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C226E5411EC2EC1C0008A44C /* Home */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		C226E5401EC2EC0A0008A44C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C28304D71EC2E2870037E3D6 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		C226E5411EC2EC1C0008A44C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C226E5431EC2EC420008A44C /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		C28304CB1EC2E2870037E3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +170,11 @@
 		C28304D61EC2E2870037E3D6 /* AzureAD */ = {
 			isa = PBXGroup;
 			children = (
-				C28304D71EC2E2870037E3D6 /* AppDelegate.swift */,
-				C28304D91EC2E2870037E3D6 /* ViewController.swift */,
+				C226E5401EC2EC0A0008A44C /* App */,
+				C226E53F1EC2EBFC0008A44C /* Modules */,
+				C226E53E1EC2EBF40008A44C /* Resources */,
 				C28304DB1EC2E2870037E3D6 /* Main.storyboard */,
-				C28304DE1EC2E2870037E3D6 /* Assets.xcassets */,
 				C28304E01EC2E2870037E3D6 /* LaunchScreen.storyboard */,
-				C28304E31EC2E2870037E3D6 /* Info.plist */,
 			);
 			path = AzureAD;
 			sourceTree = "<group>";
@@ -446,8 +478,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28304DA1EC2E2870037E3D6 /* ViewController.swift in Sources */,
 				C28304D81EC2E2870037E3D6 /* AppDelegate.swift in Sources */,
+				C226E5441EC2EC420008A44C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +732,7 @@
 				C28304FE1EC2E2870037E3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28304FF1EC2E2870037E3D6 /* Build configuration list for PBXNativeTarget "AzureADTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +741,7 @@
 				C28305011EC2E2870037E3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28305021EC2E2870037E3D6 /* Build configuration list for PBXNativeTarget "AzureADUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +750,7 @@
 				C28305041EC2E2870037E3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
