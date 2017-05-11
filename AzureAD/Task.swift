@@ -10,13 +10,18 @@ import Foundation
 
 struct Task {
     
-    public var description : String?
+    public var itemName : String?
+    public var ownerName : String?
+    public var completed : Bool?
+    private var creationDate : Date?
 }
 
 extension Task {
     
-    init(description: String) {
+    init(itemName: String, ownerName: String, completed: Bool) {
         
-        self.description = description
+        self.itemName = itemName
+        self.ownerName = ownerName
+        self.completed = completed
     }
 }

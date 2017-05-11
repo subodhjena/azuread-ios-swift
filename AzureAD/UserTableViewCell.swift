@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ADAL
 
 class UserTableViewCell: UITableViewCell {
 
@@ -21,6 +22,10 @@ class UserTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setUpCell(userInfo: ADUserInformation)  {
+        lblUserName.text = "\(userInfo.userId!) | \(userInfo.givenName!)"
     }
 
 }

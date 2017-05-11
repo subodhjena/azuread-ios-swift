@@ -25,6 +25,6 @@ class TaskTableViewCell: UITableViewCell {
 
     func setUpCell(task: Task) {
         
-        self.lblTaskDetail.text = task.description
+        self.lblTaskDetail.text = task.itemName
     }
 }

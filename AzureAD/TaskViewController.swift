@@ -50,7 +50,7 @@ class TaskViewController: FormViewController {
         
         let rowTaskDescription: TextAreaRow? = form.rowBy(tag: self.tagTaskDescription)
         
-        let task = Task(description: rowTaskDescription?.value)
+        let task = Task(itemName: (rowTaskDescription?.value)!, ownerName: "tomhanks@geekythingsforsystemc.onmicrosoft.com", completed: true)
         parentVC.tasks.append(task)
         
         self.navigationController?.popViewController(animated: true)
