@@ -73,7 +73,7 @@ class HomeViewController: UIViewController {
                 
                 
                 if((userInfo != nil) && config.showClaims!) {
-                    
+                    self.showMessage(title: "Recieved Claims", message: NSString.localizedStringWithFormat("Claims: %@", (userInfo?.allClaims)!) as String)
                     self.users.append(userInfo!)
                     self.selectedUser = userInfo
                 }
