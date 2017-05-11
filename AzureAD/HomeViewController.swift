@@ -14,7 +14,14 @@ class HomeViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var tasks : [Task] = []
-    var users : [ADUserInformation] = []
+    var users : [ADUserInformation] = [] {
+        didSet {
+            DispatchQueue.main.async{
+                self.tableView.reloadData()
+            }
+        }
+    }
+    var selectedUser : ADUserInformation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,24 +75,30 @@ class HomeViewController: UIViewController {
                 if((userInfo != nil) && config.showClaims!) {
                     
                     self.users.append(userInfo!)
-                    self.tableView.reloadData()
+                    self.selectedUser = userInfo
                 }
                 else if ((userInfo) != nil){
                     
                     self.users.append(userInfo!)
-                    self.tableView.reloadData()
+                    self.selectedUser = userInfo
                 }
                 else {
                     
-                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription , preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
+                    self.showMessage(title: "Error", message: (error?.localizedDescription)!)
                 }
             })
         }
         
         let addTaskButton = UIAlertAction(title: "Add Task", style: .default) { _ in
-            self.performSegue(withIdentifier: "TaskSegue", sender: self)
+            
+            if(self.selectedUser == nil) {
+                
+                self.showMessage(title: "Error", message: "Must Add A User to Create Tasks")
+            }
+            else {
+    
+                self.performSegue(withIdentifier: "TaskSegue", sender: self)
+            }
         }
         
         actionSheet.addAction(cancelButton)
@@ -93,6 +106,13 @@ class HomeViewController: UIViewController {
         actionSheet.addAction(addTaskButton)
         
         self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    private func showMessage(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message , preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

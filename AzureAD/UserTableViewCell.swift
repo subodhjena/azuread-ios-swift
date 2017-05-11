@@ -25,7 +25,6 @@ class UserTableViewCell: UITableViewCell {
     }
     
     func setUpCell(userInfo: ADUserInformation)  {
-        lblUserName.text = "\(userInfo.userId!) | \(userInfo.givenName!)"
+        lblUserName.text = "\(userInfo.userId! )"
     }
-
 }

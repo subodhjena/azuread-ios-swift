@@ -29,6 +29,13 @@ class WebAPIConnector {
         }
     }
     
+    func logout() {
+        
+        if(authContext != nil) {
+            
+        }
+    }
+    
     func getClaims(clearCahe: Bool, parent: UIViewController, completion: @escaping (_ userInfo: ADUserInformation?, _ error: NSError?) -> Void) {
         
         let configValues = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "ADConfig", ofType: "plist")!)
