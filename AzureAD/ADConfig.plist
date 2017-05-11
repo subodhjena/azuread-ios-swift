@@ -5,15 +5,15 @@
 	<key>authority</key>
 	<string>https://login.microsoftonline.com/common</string>
 	<key>clientId</key>
-	<string>af28b91a-7a51-4c72-b8a4-187dd5b21a75</string>
+	<string>e6d65cc4-f9e8-444a-9ba6-c3c82ce8086b</string>
 	<key>resourceString</key>
-	<string>https://geekythingsforsystemc.com/TodoApi</string>
+	<string>http://localhost:3000/tasks</string>
 	<key>redirectUri</key>
-	<string>mstodo://com.microsoft.windowsazure.activedirectory.samples.microsofttasks</string>
+	<string>urn:ietf:wg:oauth:2.0:oob</string>
 	<key>userId</key>
-	<string>tomhanks@geekythingsforsystemc.onmicrosoft.com</string>
+	<string></string>
 	<key>taskWebAPI</key>
-	<string>https://todoserviceforgeekythings.azurewebsites.net/api/todolist</string>
+	<string>http://localhost:3000/tasks</string>
 	<key>fullScreen</key>
 	<true/>
 	<key>showClaims</key>
